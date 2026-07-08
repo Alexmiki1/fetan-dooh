@@ -59,18 +59,61 @@ export const portfolio: PortfolioItem[] = [
   {
     id: "dashen-bank",
     client: "Dashen Bank",
-    campaignType: "LED Series",
+    campaignType: "LED Campaign",
     industry: "Finance",
-    results: "12 locations across Addis Ababa",
-    image: "/images/portfolio-bank.svg",
+    results: "Banking Made Simple",
+    image: "/images/dashen-campaign.png",
+    title: "Dashen Bank – Banking Made Simple",
+    headline: "Your Future. Your Money. Your Bank.",
+    subheadline: "Showcase Dashen Bank on premium digital LED screens and connect with thousands of customers across Addis Ababa. Promote modern banking solutions designed for individuals, businesses, and the growing digital economy.",
+    description: "Dashen Bank delivers convenient financial solutions through innovative banking services, digital platforms, payment cards, and customer-focused solutions. This LED campaign creates high visibility by placing the brand message in high-traffic locations where commuters, professionals, and businesses see it every day.",
+    objectives: [
+      "Increase brand awareness",
+      "Promote digital banking services",
+      "Encourage new account openings",
+      "Promote mobile banking and card services",
+      "Build customer trust and loyalty",
+      "Reach business owners and professionals"
+    ],
+    targetAudience: [
+      "Business owners",
+      "Entrepreneurs",
+      "Corporate customers",
+      "Young professionals",
+      "Students",
+      "Digital banking users",
+      "International customers"
+    ],
+    suggestedMessage: "Bank Smarter. Live Better.\nSecure Banking Solutions\nAnywhere. Anytime.\n\nDashen Bank"
   },
   {
-    id: "habesha-brewery",
-    client: "Habesha Brewery",
-    campaignType: "Transit Wrap",
-    industry: "FMCG",
-    results: "45 branded buses on 8 routes",
-    image: "/images/portfolio-brewery.svg",
+    id: "bamacon-engineering",
+    client: "BamaCon Engineering PLC",
+    campaignType: "LED Campaign",
+    industry: "Construction",
+    results: "Strong Foundations. Modern Solutions.",
+    image: "/images/bamacon-campaign.png",
+    title: "BamaCon Engineering PLC – Building Ethiopia’s Future",
+    headline: "Strong Foundations. Modern Solutions. Lasting Results.",
+    subheadline: "Showcase BamaCon Engineering PLC on premium digital LED screens and reach thousands of potential clients, investors, and decision-makers across Addis Ababa. With experience in building construction, infrastructure projects, and engineering solutions, BamaCon delivers quality projects built for the future.",
+    description: "BamaCon Engineering PLC transforms ideas into reliable structures through professional engineering, construction expertise, and innovative solutions. From commercial buildings and industrial projects to infrastructure development, BamaCon is committed to quality, safety, and excellence.",
+    objectives: [
+      "Increase brand visibility",
+      "Build trust with potential customers",
+      "Promote construction and engineering services",
+      "Showcase completed and ongoing projects",
+      "Reach businesses, investors, and property developers"
+    ],
+    targetAudience: [
+      "Real estate developers",
+      "Business owners",
+      "Government organizations",
+      "Investors",
+      "Property owners",
+      "Construction partners",
+      "Engineering professionals"
+    ],
+    suggestedMessage: "Building Dreams Into Reality\n🏗️ Construction Excellence\n🏢 Engineering Solutions\nBamaCon Engineering PLC"
   },
   {
     id: "safaricom",
@@ -105,4 +148,5 @@ export const industries = [
   "FMCG",
   "Aviation",
   "Transport",
+  "Construction",
 ] as const;
