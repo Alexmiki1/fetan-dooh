@@ -16,10 +16,9 @@ export default function Logo({
     <Image
       src="/images/logo.png"
       alt="Fetan Advertising"
-      width={Math.round(height * 2.8)}
-      height={height}
-      className={`w-auto object-contain ${className}`}
-      style={{ height }}
+      width={280}
+      height={100}
+      className={`w-auto h-auto object-contain ${className}`}
       priority
     />
   );

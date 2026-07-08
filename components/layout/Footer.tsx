@@ -29,7 +29,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
           <div className="lg:col-span-2">
-            <Logo height={48} />
+            <Logo className="h-12" />
             <p className="mt-4 text-white/50 text-sm leading-relaxed max-w-xs">
               Premium outdoor advertising across Ethiopia. LED screens,
               transit branding, and event activations since 2016.
