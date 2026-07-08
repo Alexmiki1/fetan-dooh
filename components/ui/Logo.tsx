@@ -18,7 +18,7 @@ export default function Logo({
       alt="Fetan Advertising"
       width={280}
       height={100}
-      className={`w-auto h-auto object-contain ${className}`}
+      className={`w-auto object-contain ${className}`}
       priority
     />
   );
