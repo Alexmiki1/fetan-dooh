@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import type { PortfolioItem } from "@/data/portfolio";
 
 interface PortfolioCardProps {
@@ -7,7 +8,7 @@ interface PortfolioCardProps {
 
 export default function PortfolioCard({ item }: PortfolioCardProps) {
   return (
-    <div className="group relative aspect-[4/5] rounded-2xl overflow-hidden">
+    <Link href={`/portfolio/${item.id}`} className="group relative aspect-[4/5] rounded-2xl overflow-hidden block">
       <Image
         src={item.image}
         alt={item.client}
@@ -25,6 +26,6 @@ export default function PortfolioCard({ item }: PortfolioCardProps) {
         </h3>
         <p className="text-white/60 text-sm mt-2">{item.results}</p>
       </div>
-    </div>
+    </Link>
   );
 }

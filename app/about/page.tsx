@@ -49,7 +49,7 @@ export default function AboutPage() {
               </p>
               <p>
                 What started as a single LED screen on Bole Road has evolved into
-                a network of 85+ placements spanning LED displays, transit wraps,
+                a network of 10+ placements spanning LED displays, transit wraps,
                 and event activations. We&apos;ve powered campaigns for
                 Ethiopia&apos;s largest brands — Ethio Telecom, Dashen Bank,
                 Habesha Brewery — and hundreds of growing businesses.

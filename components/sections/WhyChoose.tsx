@@ -8,7 +8,7 @@ const reasons = [
   {
     title: "Prime Locations",
     description:
-      "85+ placements on Ethiopia's highest-traffic corridors — Bole, Meskel Square, CMC, and beyond.",
+      "10+ placements on Ethiopia's highest-traffic corridors — Bole, Meskel Square, CMC, and beyond.",
   },
   {
     title: "End-to-End Service",

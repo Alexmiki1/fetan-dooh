@@ -19,7 +19,7 @@ export default function About() {
               <p className="text-white/60 leading-relaxed mb-6">
                 Founded in 2016, Fetan Outdoor Advertising has grown from a
                 single LED placement on Bole Road to Ethiopia&apos;s leading outdoor
-                media network — with 85+ locations, 400+ campaigns, and 230+
+                media network — with 10+ locations, 400+ campaigns, and 230+
                 clients across telecom, finance, FMCG, and more.
               </p>
               <p className="text-white/60 leading-relaxed mb-8">

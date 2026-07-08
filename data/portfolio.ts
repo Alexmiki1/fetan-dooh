@@ -5,16 +5,56 @@ export interface PortfolioItem {
   industry: string;
   results: string;
   image: string;
+  title?: string;
+  headline?: string;
+  subheadline?: string;
+  description?: string;
+  objectives?: string[];
+  targetAudience?: string[];
+  locations?: string[];
+  suggestedMessage?: string;
+  callToAction?: string;
 }
 
 export const portfolio: PortfolioItem[] = [
   {
-    id: "ethio-telecom",
-    client: "Ethio Telecom",
+    id: "yango",
+    client: "Yango Ethiopia",
     campaignType: "LED Campaign",
-    industry: "Telecom",
-    results: "3.2M impressions in 30 days",
-    image: "/images/portfolio-telecom.svg",
+    industry: "Transport",
+    results: "Reach Millions on the Move",
+    image: "/images/yango-campaign.png",
+    title: "Yango Ethiopia – Your Ride, Right on Time",
+    headline: "Reach Millions on the Move with Yango",
+    subheadline: "Promote one of Ethiopia's most trusted ride-hailing apps on premium digital LED screens located across Addis Ababa. Put your brand in front of commuters, professionals, students, and travelers every day. Yango emphasizes convenient ride booking, upfront fares, real-time tracking, and safety features for riders.",
+    description: "Yango is making daily travel in Ethiopia faster, easier, and more comfortable. This LED campaign is designed to maximize visibility by delivering bold, high-impact visuals in high-traffic locations. Digital Out-of-Home advertising ensures the message reaches thousands of people throughout the day, increasing brand awareness and encouraging app downloads.",
+    objectives: [
+      "Increase brand awareness",
+      "Drive app downloads",
+      "Promote first-time ride offers",
+      "Strengthen customer trust",
+      "Reach commuters during peak traffic hours"
+    ],
+    targetAudience: [
+      "Daily commuters",
+      "University students",
+      "Office workers",
+      "Business professionals",
+      "Tourists and visitors",
+      "Anyone looking for reliable transportation"
+    ],
+    locations: [
+      "Bole Friendship",
+      "Churchill",
+      "Merkato",
+      "CMC Roundabout",
+      "Bole Road",
+      "Wello Sefer",
+      "Bole Airport VIP Entrance",
+      "Near Bambis"
+    ],
+    suggestedMessage: "Skip the Wait. Ride with Yango.\nFast Booking • Upfront Prices • Safe Rides\nDownload the Yango App Today",
+    callToAction: "Book your next ride with Yango and travel smarter across Addis Ababa."
   },
   {
     id: "dashen-bank",
@@ -64,4 +104,5 @@ export const industries = [
   "Finance",
   "FMCG",
   "Aviation",
+  "Transport",
 ] as const;

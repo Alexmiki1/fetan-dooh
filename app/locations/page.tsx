@@ -26,7 +26,7 @@ export default function LocationsPage() {
             <SectionHead
               eyebrow="Locations"
               title="Our advertising network."
-              description="85+ placements across Addis Ababa and major Ethiopian cities."
+              description="10+ placements across Addis Ababa and major Ethiopian cities."
               center
             />
           </FadeIn>

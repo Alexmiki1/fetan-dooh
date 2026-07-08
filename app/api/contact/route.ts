@@ -18,9 +18,9 @@ export async function POST(request: Request) {
 
     const resend = new Resend(process.env.RESEND_API_KEY);
 
-    await resend.emails.send({
+    const result = await resend.emails.send({
       from: "Fetan Website <onboarding@resend.dev>",
-      to: process.env.CONTACT_EMAIL || "hello@fetanads.et",
+      to: process.env.CONTACT_EMAIL || "Alexxissmiki@gmail.com",
       replyTo: data.email,
       subject: `New inquiry from ${data.name} — ${data.service}`,
       html: `
@@ -35,7 +35,14 @@ export async function POST(request: Request) {
       `,
     });
 
-    return NextResponse.json({ success: true });
+    console.log("Resend Result:", result);
+
+    if (result.error) {
+      console.error("Resend API Error:", result.error);
+      return NextResponse.json({ error: result.error.message }, { status: 400 });
+    }
+
+    return NextResponse.json({ success: true, id: result.data?.id });
   } catch (error) {
     if (error instanceof z.ZodError) {
       return NextResponse.json(

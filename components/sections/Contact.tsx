@@ -23,6 +23,7 @@ type ContactForm = z.infer<typeof contactSchema>;
 
 export default function Contact() {
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [errorMessage, setErrorMessage] = useState<string>("");
 
   const {
     register,
@@ -35,17 +36,26 @@ export default function Contact() {
 
   const onSubmit = async (data: ContactForm) => {
     setStatus("loading");
+    setErrorMessage("");
     try {
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
       });
-      if (!res.ok) throw new Error("Failed");
+      
+      const resData = await res.json();
+      
+      if (!res.ok) {
+        throw new Error(resData.error || "Failed to send message");
+      }
+      
       setStatus("success");
       reset();
-    } catch {
+    } catch (err: any) {
+      console.error(err);
       setStatus("error");
+      setErrorMessage(err.message || "Something went wrong. Please try again or email us directly.");
     }
   };
 
@@ -154,7 +164,7 @@ export default function Contact() {
               )}
               {status === "error" && (
                 <p className="text-red-400 text-sm">
-                  Something went wrong. Please try again or email us directly.
+                  {errorMessage}
                 </p>
               )}
             </form>
