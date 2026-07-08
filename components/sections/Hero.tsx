@@ -58,7 +58,7 @@ export default function Hero() {
             {[...marqueeLocations, ...marqueeLocations].map((loc, i) => (
               <span
                 key={i}
-                className="font-mono text-xs uppercase tracking-[0.2em] text-white/30 mx-8"
+                className="font-mono text-xs uppercase tracking-[0.2em] text-white mx-8"
               >
                 {loc}
                 <span className="text-amber mx-4">◆</span>

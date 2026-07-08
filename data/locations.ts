@@ -185,5 +185,6 @@ export const marqueeLocations = [
   "CMC Roundabout – Ejegyahu Dibaba Building, next to Yetebaberut Petrol Station",
   "Bole Airport VIP Entrance – Yeshi Building",
   "Bole Bulbula",
-  "Tor Hayloch – Tor Hayloch Bridge"
+  "Tor Hayloch – Tor Hayloch Bridge",
+  "Bole Friendship"
 ];
