@@ -39,7 +39,9 @@ export default function Navbar() {
             <li key={link.href}>
               <Link
                 href={link.href}
-                className="text-sm text-amber font-medium hover:text-amber-dim transition-colors"
+                className={`text-sm font-medium transition-colors ${
+                  scrolled ? "text-amber hover:text-amber-dim" : "text-night hover:text-night/70"
+                }`}
               >
                 {link.label}
               </Link>
@@ -48,16 +50,29 @@ export default function Navbar() {
         </ul>
 
         <div className="hidden lg:flex items-center gap-3">
-          <Button href="/contact" variant="ghost" className="!px-5 !py-2.5 !text-sm !text-amber !border-amber hover:!bg-amber/10">
+          <Button 
+            href="/contact" 
+            variant="ghost" 
+            className={`!px-5 !py-2.5 !text-sm ${
+              scrolled 
+                ? "!text-amber !border-amber hover:!bg-amber/10" 
+                : "!text-night !border-night hover:!bg-night/10"
+            }`}
+          >
             Contact
           </Button>
-          <Button href="/contact" className="!px-5 !py-2.5 !text-sm">
+          <Button 
+            href="/contact" 
+            className={`!px-5 !py-2.5 !text-sm ${
+              scrolled ? "" : "!bg-night !text-white !shadow-none hover:!bg-night/90"
+            }`}
+          >
             Request Quote
           </Button>
         </div>
 
         <button
-          className="lg:hidden text-amber p-2"
+          className={`lg:hidden p-2 transition-colors ${scrolled ? "text-amber" : "text-night"}`}
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Toggle menu"
         >

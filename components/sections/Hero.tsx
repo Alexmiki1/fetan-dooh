@@ -47,8 +47,8 @@ export default function Hero() {
           transition={{ delay: 1.1, duration: 0.6 }}
           className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4"
         >
-          <Button href="/contact">Request Quote</Button>
-          <Button href="/locations" variant="ghost" className="!text-amber !border-amber hover:!bg-amber/10">
+          <Button href="/contact" className="!bg-night !text-white !shadow-none hover:!bg-night/90">Request Quote</Button>
+          <Button href="/locations" variant="ghost" className="!text-night !border-night hover:!bg-night/10">
             See Locations →
           </Button>
         </motion.div>
