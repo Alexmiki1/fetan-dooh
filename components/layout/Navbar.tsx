@@ -39,7 +39,7 @@ export default function Navbar() {
             <li key={link.href}>
               <Link
                 href={link.href}
-                className="text-sm text-white/70 hover:text-amber transition-colors"
+                className="text-sm text-amber font-medium hover:text-amber-dim transition-colors"
               >
                 {link.label}
               </Link>
@@ -48,7 +48,7 @@ export default function Navbar() {
         </ul>
 
         <div className="hidden lg:flex items-center gap-3">
-          <Button href="/contact" variant="ghost" className="!px-5 !py-2.5 !text-sm">
+          <Button href="/contact" variant="ghost" className="!px-5 !py-2.5 !text-sm !text-amber !border-amber hover:!bg-amber/10">
             Contact
           </Button>
           <Button href="/contact" className="!px-5 !py-2.5 !text-sm">
@@ -57,7 +57,7 @@ export default function Navbar() {
         </div>
 
         <button
-          className="lg:hidden text-white p-2"
+          className="lg:hidden text-amber p-2"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Toggle menu"
         >
@@ -86,14 +86,14 @@ export default function Navbar() {
                   <Link
                     href={link.href}
                     onClick={() => setMobileOpen(false)}
-                    className="block py-2 text-white/80 hover:text-amber transition-colors"
+                    className="block py-2 text-amber font-medium hover:text-amber-dim transition-colors"
                   >
                     {link.label}
                   </Link>
                 </li>
               ))}
               <li className="pt-3 flex gap-3">
-                <Button href="/contact" variant="ghost" className="!text-sm flex-1">
+                <Button href="/contact" variant="ghost" className="!text-sm flex-1 !text-amber !border-amber hover:!bg-amber/10">
                   Contact
                 </Button>
                 <Button href="/contact" className="!text-sm flex-1">
