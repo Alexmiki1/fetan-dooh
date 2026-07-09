@@ -6,7 +6,7 @@ interface LocationCardProps {
   location: Location;
 }
 
-const availabilityColors = {
+const visibilityColors = {
   High: "bg-green-100 text-green-700",
   Medium: "bg-amber/10 text-amber-dim",
   Limited: "bg-red-100 text-red-600",
@@ -44,9 +44,9 @@ export default function LocationCard({ location }: LocationCardProps) {
         </div>
         <div className="mt-4 flex items-center justify-between">
           <span
-            className={`text-xs font-mono uppercase tracking-wider px-3 py-1 rounded-full ${availabilityColors[location.availability]}`}
+            className={`text-xs font-mono uppercase tracking-wider px-3 py-1 rounded-full ${visibilityColors[location.visibility]}`}
           >
-            {location.availability} Availability
+            {location.visibility} Visibility
           </span>
           <Link
             href="/contact"

@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import SectionHead from "@/components/ui/SectionHead";
 import FadeIn from "@/components/ui/FadeIn";
 
@@ -8,12 +9,12 @@ const reasons = [
   {
     title: "Prime Locations",
     description:
-      "10+ placements on Ethiopia's highest-traffic corridors — Bole, Meskel Square, CMC, and beyond.",
+      "10+ placements on Ethiopia's highest-traffic corridors, Bole, Meskel Square, CMC, and beyond.",
   },
   {
     title: "End-to-End Service",
     description:
-      "From creative design to installation and maintenance — one team, one point of contact.",
+      "From creative design to installation and maintenance, one team, one point of contact.",
   },
   {
     title: "Transparent Reporting",
@@ -82,15 +83,25 @@ export default function WhyChoose() {
             </motion.ul>
           </div>
 
-          <FadeIn delay={0.2}>
-            <div className="relative bg-violet-panel rounded-2xl p-12 min-h-[400px] flex items-end overflow-hidden">
-              <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(255,138,30,0.15)_0%,transparent_60%)]" />
-              <span className="absolute top-8 right-8 font-display text-[120px] text-white/[0.03] leading-none select-none">
-                F
-              </span>
-              <p className="relative font-mono text-xs uppercase tracking-[0.2em] text-amber/60">
-                // visibility.engineered
-              </p>
+          <FadeIn delay={0.2} className="h-full">
+            <div className="relative rounded-2xl overflow-hidden h-full min-h-[400px] lg:min-h-[600px] shadow-2xl">
+              <Image
+                src="/images/emirates-billboard.png"
+                alt="Why choose Fetan Outdoor Advertising"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-night/80 via-night/20 to-transparent" />
+              
+              <div className="absolute bottom-8 left-8 right-8">
+                <span className="font-display text-[80px] md:text-[120px] text-white/10 leading-none select-none block mb-4">
+                  F
+                </span>
+                <p className="font-mono text-xs uppercase tracking-[0.2em] text-amber/80">
+                  // visibility.engineered
+                </p>
+              </div>
             </div>
           </FadeIn>
         </div>

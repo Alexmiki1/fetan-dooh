@@ -1,5 +1,6 @@
 import SectionHead from "@/components/ui/SectionHead";
 import FadeIn from "@/components/ui/FadeIn";
+import Image from "next/image";
 
 export default function About() {
   return (
@@ -19,11 +20,12 @@ export default function About() {
               <p className="text-white/60 leading-relaxed mb-6">
                 Founded in 2016, Fetan Outdoor Advertising has grown from a
                 single LED placement on Bole Road to Ethiopia&apos;s leading outdoor
-                media network — with 10+ locations, 400+ campaigns, and 230+
+                media network with 10+ locations, 400+ campaigns, and 230+
                 clients across telecom, finance, FMCG, and more.
               </p>
               <p className="text-white/60 leading-relaxed mb-8">
-                We believe every brand deserves to be seen. Our team combines
+                Serving Ethiopia&apos;s largest brands, Ethio Telecom, Dashen Bank,
+                Habesha Brewery, and hundreds of growing businesses. Our team combines
                 local market knowledge with world-class creative and technology
                 to deliver campaigns that drive real business results.
               </p>
@@ -51,12 +53,21 @@ export default function About() {
             </FadeIn>
           </div>
 
-          <FadeIn delay={0.3}>
-            <div className="relative bg-violet-panel rounded-2xl min-h-[400px] flex items-center justify-center overflow-hidden">
-              <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(255,138,30,0.1)_0%,transparent_70%)]" />
-              <span className="font-display text-[100px] md:text-[140px] text-white/[0.06] uppercase tracking-wider select-none">
-                EST. 2016
-              </span>
+          <FadeIn delay={0.3} className="h-full">
+            <div className="relative rounded-2xl overflow-hidden h-full min-h-[400px] shadow-2xl">
+              <Image
+                src="/images/team-meeting.png"
+                alt="About Fetan Outdoor Advertising"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-night/80 via-transparent to-transparent" />
+              <div className="absolute bottom-8 left-0 right-0 text-center">
+                <span className="font-display text-[80px] md:text-[100px] text-white/10 uppercase tracking-wider select-none leading-none">
+                  EST. 2016
+                </span>
+              </div>
             </div>
           </FadeIn>
         </div>

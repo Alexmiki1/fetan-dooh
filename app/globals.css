@@ -12,7 +12,7 @@
   --color-night: #15171c;
   --color-dusk: #1e2a4a;
   --color-paper: #f5f3ee;
-  --color-amber: #ff8a1e;
+  --color-amber: #fcb216;
   --color-amber-dim: #cc6f15;
   --font-display: var(--font-anton);
   --font-body: var(--font-inter);
@@ -48,9 +48,9 @@ body {
 .billboard-corner {
   width: 8px;
   height: 8px;
-  background: #ff8a1e;
+  background: #fcb216;
   border-radius: 50%;
-  box-shadow: 0 0 8px #ff8a1e;
+  box-shadow: 0 0 8px #fcb216;
 }
 
 /* Glassmorphism navbar */
@@ -68,6 +68,6 @@ body {
   background: #15171c;
 }
 ::-webkit-scrollbar-thumb {
-  background: #ff8a1e;
+  background: #fcb216;
   border-radius: 4px;
 }

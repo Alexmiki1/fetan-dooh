@@ -24,7 +24,7 @@ export default function Partners() {
             <motion.div
               key={partner.id}
               variants={fadeInChild}
-              className="group flex items-center justify-center bg-white rounded-2xl p-6 md:p-8 h-28 md:h-32 shadow-card hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+              className="group flex items-center justify-center h-28 md:h-32 transition-transform duration-300 hover:-translate-y-1"
             >
               <Image
                 src={partner.logo}

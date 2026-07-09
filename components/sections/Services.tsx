@@ -11,8 +11,8 @@ export default function Services() {
         <FadeIn>
           <SectionHead
             eyebrow="Our Services"
-            title="Outdoor advertising, every format."
-            description="From dynamic LED screens to transit wraps — we place your brand where Ethiopia looks."
+            title="Outdoor advertising, for every format."
+            description="From dynamic LED screens to transit wraps, we place your brand where Ethiopia looks."
           />
         </FadeIn>
 

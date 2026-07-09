@@ -14,9 +14,9 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <Locations />
       <Services />
       <WhyChoose />
-      <Locations />
       <Portfolio />
       <Partners />
       <StatsBanner />
