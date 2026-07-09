@@ -5,8 +5,8 @@ import { contact } from "@/data/contact";
 const footerLinks = {
   Services: [
     { label: "LED Screens", href: "/services#led" },
-    { label: "Transit Branding", href: "/services#transit" },
-    { label: "Event Branding", href: "/services#event" },
+    { label: "Digital Campaigns", href: "/services#digital" },
+    { label: "Creative Services", href: "/services#creative" },
   ],
   Portfolio: [
     { label: "Recent Campaigns", href: "/portfolio" },
@@ -48,20 +48,7 @@ export default function Footer() {
             >
               {contact.phoneDisplay}
             </a>
-            <div className="mt-6 flex gap-4">
-              {["facebook", "instagram", "linkedin", "twitter"].map((social) => (
-                <a
-                  key={social}
-                  href="#"
-                  className="w-9 h-9 rounded-full border border-white/10 flex items-center justify-center text-white/40 hover:text-amber hover:border-amber/30 transition-colors"
-                  aria-label={social}
-                >
-                  <span className="text-xs uppercase font-mono">
-                    {social[0]}
-                  </span>
-                </a>
-              ))}
-            </div>
+
           </div>
 
           {Object.entries(footerLinks).map(([title, links]) => (
