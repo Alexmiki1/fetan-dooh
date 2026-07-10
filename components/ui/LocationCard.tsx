@@ -35,10 +35,6 @@ export default function LocationCard({ location }: LocationCardProps) {
         <div className="mt-3 space-y-1.5 text-sm text-night/60">
           <p className="flex items-center gap-2">
             <span className="text-amber">→</span>
-            {location.dailyTraffic}
-          </p>
-          <p className="flex items-center gap-2">
-            <span className="text-amber">→</span>
             {location.screenType}
           </p>
         </div>

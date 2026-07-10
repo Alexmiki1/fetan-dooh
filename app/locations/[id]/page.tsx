@@ -68,7 +68,7 @@ export default async function LocationPage({ params }: PageProps) {
               <SectionHead
                 eyebrow={location.area}
                 title={location.name}
-                description={`${location.dailyTraffic} • ${location.screenType}`}
+                description={location.screenType}
               />
             </div>
 
@@ -102,10 +102,6 @@ export default async function LocationPage({ params }: PageProps) {
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2 text-night/70">
                     <span className="text-amber">—</span>
-                    <span><strong>Traffic:</strong> {location.dailyTraffic}</span>
-                  </li>
-                  <li className="flex items-start gap-2 text-night/70">
-                    <span className="text-amber">—</span>
                     <span><strong>Visibility:</strong> {location.visibility}</span>
                   </li>
                 </ul>
@@ -120,10 +116,6 @@ export default async function LocationPage({ params }: PageProps) {
                 <li className="flex justify-between items-center border-b border-night/5 pb-2">
                   <span className="text-night/60">Area</span>
                   <span className="font-medium text-night">{location.area}</span>
-                </li>
-                <li className="flex justify-between items-center border-b border-night/5 pb-2">
-                  <span className="text-night/60">Coordinates</span>
-                  <span className="font-mono text-sm text-night">{location.lat}, {location.lng}</span>
                 </li>
               </ul>
             </div>
