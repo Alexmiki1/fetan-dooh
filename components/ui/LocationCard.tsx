@@ -14,7 +14,7 @@ const visibilityColors = {
 
 export default function LocationCard({ location }: LocationCardProps) {
   return (
-    <div className="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg transition-shadow duration-300">
+    <Link href={`/locations/${location.id}`} className="group block bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-lg transition-shadow duration-300">
       <div className="relative h-48 overflow-hidden">
         <Image
           src={location.image}
@@ -29,7 +29,7 @@ export default function LocationCard({ location }: LocationCardProps) {
         </span>
       </div>
       <div className="p-6">
-        <h3 className="font-display text-xl uppercase text-night tracking-wide">
+        <h3 className="font-display text-xl uppercase text-night tracking-wide group-hover:text-amber transition-colors">
           {location.name}
         </h3>
         <div className="mt-3 space-y-1.5 text-sm text-night/60">
@@ -48,14 +48,11 @@ export default function LocationCard({ location }: LocationCardProps) {
           >
             {location.visibility} Visibility
           </span>
-          <Link
-            href="/contact"
-            className="text-sm text-amber hover:text-amber-dim transition-colors font-medium"
-          >
-            Inquire →
-          </Link>
+          <span className="text-sm text-amber group-hover:text-amber-dim transition-colors font-medium flex items-center gap-1">
+            View Details <span className="group-hover:translate-x-1 transition-transform">→</span>
+          </span>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
