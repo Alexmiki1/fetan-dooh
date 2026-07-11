@@ -35,7 +35,7 @@ export default function LocationCard({ location }: LocationCardProps) {
         <div className="mt-3 space-y-1.5 text-sm text-night/60">
           <p className="flex items-center gap-2">
             <span className="text-amber">→</span>
-            {location.screenType}
+            {location.physicalDimensions ? `${location.screenType} — ${location.physicalDimensions}` : location.screenType}
           </p>
         </div>
         <div className="mt-4 flex items-center justify-between">

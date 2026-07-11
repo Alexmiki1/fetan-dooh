@@ -68,7 +68,7 @@ export default async function LocationPage({ params }: PageProps) {
               <SectionHead
                 eyebrow={location.area}
                 title={location.name}
-                description={location.screenType}
+                description={location.physicalDimensions ? `${location.screenType} — ${location.physicalDimensions}` : location.screenType}
               />
             </div>
 
@@ -92,6 +92,24 @@ export default async function LocationPage({ params }: PageProps) {
                     <span className="text-amber">—</span>
                     <span><strong>Category:</strong> {location.type}</span>
                   </li>
+                  {location.physicalDimensions && (
+                    <li className="flex items-start gap-2 text-night/70">
+                      <span className="text-amber">—</span>
+                      <span><strong>Dimensions:</strong> {location.physicalDimensions}</span>
+                    </li>
+                  )}
+                  {location.designResolution && (
+                    <li className="flex items-start gap-2 text-night/70">
+                      <span className="text-amber">—</span>
+                      <span><strong>Resolution:</strong> {location.designResolution}</span>
+                    </li>
+                  )}
+                  {location.aspectRatio && (
+                    <li className="flex items-start gap-2 text-night/70">
+                      <span className="text-amber">—</span>
+                      <span><strong>Aspect Ratio:</strong> {location.aspectRatio}</span>
+                    </li>
+                  )}
                 </ul>
               </div>
 

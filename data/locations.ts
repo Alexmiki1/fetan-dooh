@@ -11,6 +11,9 @@ export interface Location {
   image: string;
   lat: number;
   lng: number;
+  designResolution?: string;
+  physicalDimensions?: string;
+  aspectRatio?: string;
 }
 
 export const locations: Location[] = [
@@ -20,11 +23,14 @@ export const locations: Location[] = [
     area: "Next to Friendship City Center",
     type: "LED",
     dailyTraffic: "150K+ daily",
-    screenType: "4K LED — 6m × 3m",
+    screenType: "LED",
     visibility: "High",
     image: "/images/location-bole.svg",
     lat: 8.9892,
     lng: 38.7885,
+    designResolution: "1920 × 576 px",
+    physicalDimensions: "10 m × 3 m",
+    aspectRatio: "3.33:1 (Ultra Wide)",
   },
   {
     id: "22-ag-grace",
@@ -32,11 +38,14 @@ export const locations: Location[] = [
     area: "22 Health Center area",
     type: "LED",
     dailyTraffic: "100K+ daily",
-    screenType: "14×48 ft Backlit",
+    screenType: "LED",
     visibility: "High",
     image: "/images/location-meskel.svg",
     lat: 9.0205,
     lng: 38.7901,
+    designResolution: "3840 × 2160 px",
+    physicalDimensions: "6 m × 5 m",
+    aspectRatio: "16:9",
   },
   {
     id: "churchill",
@@ -44,11 +53,14 @@ export const locations: Location[] = [
     area: "Churchill Road, Tracon Tower",
     type: "LED",
     dailyTraffic: "95K+ daily",
-    screenType: "Full HD LED — 4m × 2.5m",
+    screenType: "LED",
     visibility: "High",
     image: "/images/location-piassa.svg",
     lat: 9.0227,
     lng: 38.7489,
+    designResolution: "1336 × 768 px",
+    physicalDimensions: "7.6 m × 5.7 m",
+    aspectRatio: "1.74:1",
   },
   {
     id: "bole-medhanialem",
@@ -56,11 +68,14 @@ export const locations: Location[] = [
     area: "Bole",
     type: "LED",
     dailyTraffic: "130K+ daily",
-    screenType: "4K LED — 5m × 3m",
+    screenType: "LED",
     visibility: "High",
     image: "/images/location-bole.svg",
     lat: 8.9925,
     lng: 38.7895,
+    designResolution: "1280 × 1066 px",
+    physicalDimensions: "6 m × 5 m",
+    aspectRatio: "1.20:1",
   },
   {
     id: "merkato",
