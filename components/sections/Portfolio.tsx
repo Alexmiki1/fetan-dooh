@@ -13,8 +13,8 @@ export default function Portfolio() {
         <FadeIn>
           <SectionHead
             eyebrow="Portfolio"
-            title="Recent campaigns."
-            description="Brands that trust Fetan to deliver visibility at scale."
+            title="Premium DOOH Campaigns."
+            description="Brands that trust our LED advertising company in Ethiopia to deliver visibility at scale."
             light
           />
         </FadeIn>

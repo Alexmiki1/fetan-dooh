@@ -37,8 +37,7 @@ export default function Hero() {
           transition={{ delay: 0.9, duration: 0.6 }}
           className="mt-8 text-center text-night/60 text-lg max-w-2xl mx-auto leading-relaxed"
         >
-          LED screens and transit branding across Ethiopia&apos;s busiest
-          corridors. Your brand, seen by thousands every single day.
+          Premium digital LED billboards and DOOH advertising across Addis Ababa and Ethiopia&apos;s busiest corridors. Reach thousands every day with high impact outdoor media.
         </motion.p>
 
         <motion.div

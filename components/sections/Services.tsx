@@ -11,8 +11,8 @@ export default function Services() {
         <FadeIn>
           <SectionHead
             eyebrow="Our Services"
-            title="Outdoor advertising, for every format."
-            description="From dynamic LED screens to transit wraps, we place your brand where Ethiopia looks."
+            title="Digital Out of Home (DOOH) advertising, for every format."
+            description="From premium digital LED screens to transit advertising, we place your brand awareness campaigns where Ethiopia looks."
           />
         </FadeIn>
 

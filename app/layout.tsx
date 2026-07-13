@@ -26,13 +26,25 @@ const spaceMono = Space_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Fetan Outdoor Advertising — Reach Thousands Every Day",
+  title: "DOOH Advertising Addis Ababa | Premium LED Screens in Ethiopia",
   description:
-    "Premium LED screens, transit and event branding across Ethiopia.",
+    "Advertise on premium digital LED screens across Addis Ababa. Reach thousands daily with high impact DOOH advertising at prime locations in Ethiopia.",
+  keywords: [
+    "DOOH advertising Addis Ababa",
+    "Digital Out of Home advertising Ethiopia",
+    "LED billboard advertising Addis Ababa",
+    "LED screen advertising Ethiopia",
+    "Digital billboard Ethiopia",
+    "Outdoor advertising Addis Ababa",
+    "Digital advertising screens Ethiopia",
+    "LED advertising company Ethiopia",
+    "Digital signage Addis Ababa",
+    "Billboard advertising Ethiopia"
+  ],
   openGraph: {
-    title: "Fetan Outdoor Advertising — Reach Thousands Every Day",
+    title: "DOOH Advertising Addis Ababa | Premium LED Screens in Ethiopia",
     description:
-      "Premium LED screens, transit and event branding across Ethiopia.",
+      "Advertise on premium digital LED screens across Addis Ababa. Reach thousands daily with high impact DOOH advertising at prime locations in Ethiopia.",
     url: "https://fetanads.et",
     siteName: "Fetan Outdoor Advertising",
     locale: "en_US",
@@ -40,9 +52,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Fetan Outdoor Advertising",
+    title: "DOOH Advertising Addis Ababa | Premium LED Screens in Ethiopia",
     description:
-      "Premium LED screens, transit and event branding across Ethiopia.",
+      "Advertise on premium digital LED screens across Addis Ababa. Reach thousands daily with high impact DOOH advertising at prime locations in Ethiopia.",
   },
 };
 

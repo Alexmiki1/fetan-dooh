@@ -14,7 +14,7 @@ export default function Locations() {
           <SectionHead
             eyebrow="Locations"
             title="Featured advertising locations."
-            description="High-traffic placements across Addis Ababa's most visible corridors."
+            description="High traffic placements across Addis Ababa's most visible corridors."
           />
         </FadeIn>
 

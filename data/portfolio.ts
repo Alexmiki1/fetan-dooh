@@ -27,8 +27,8 @@ export const portfolio: PortfolioItem[] = [
     youtubeId: "kOXlxXSFgx0",
     title: "Yango Ethiopia – Your Ride, Right on Time",
     headline: "Reach Millions on the Move with Yango",
-    subheadline: "Promote one of Ethiopia's most trusted ride-hailing apps on premium digital LED screens located across Addis Ababa. Put your brand in front of commuters, professionals, students, and travelers every day. Yango emphasizes convenient ride booking, upfront fares, real-time tracking, and safety features for riders.",
-    description: "Yango is making daily travel in Ethiopia faster, easier, and more comfortable. This LED campaign is designed to maximize visibility by delivering bold, high-impact visuals in high-traffic locations. Digital Out-of-Home advertising ensures the message reaches thousands of people throughout the day, increasing brand awareness and encouraging app downloads.",
+    subheadline: "Promote one of Ethiopia's most trusted ride hailing apps on premium digital LED screens located across Addis Ababa. Put your brand in front of commuters, professionals, students, and travelers every day. Yango emphasizes convenient ride booking, upfront fares, real time tracking, and safety features for riders.",
+    description: "Yango is making daily travel in Ethiopia faster, easier, and more comfortable. This LED campaign is designed to maximize visibility by delivering bold, high impact visuals in high traffic locations. Digital Out of Home advertising ensures the message reaches thousands of people throughout the day, increasing brand awareness and encouraging app downloads.",
     objectives: [
       "Increase brand awareness",
       "Drive app downloads",
@@ -67,7 +67,7 @@ export const portfolio: PortfolioItem[] = [
     title: "Dashen Bank – Banking Made Simple",
     headline: "Your Future. Your Money. Your Bank.",
     subheadline: "Showcase Dashen Bank on premium digital LED screens and connect with thousands of customers across Addis Ababa. Promote modern banking solutions designed for individuals, businesses, and the growing digital economy.",
-    description: "Dashen Bank delivers convenient financial solutions through innovative banking services, digital platforms, payment cards, and customer-focused solutions. This LED campaign creates high visibility by placing the brand message in high-traffic locations where commuters, professionals, and businesses see it every day.",
+    description: "Dashen Bank delivers convenient financial solutions through innovative banking services, digital platforms, payment cards, and customer focused solutions. This LED campaign creates high visibility by placing the brand message in high traffic locations where commuters, professionals, and businesses see it every day.",
     objectives: [
       "Increase brand awareness",
       "Promote digital banking services",
@@ -96,8 +96,8 @@ export const portfolio: PortfolioItem[] = [
     youtubeId: "3WJsBEsSRKw",
     title: "beU Delivery – Your Favorite Meals, Fast",
     headline: "Hungry? beU Delivers.",
-    subheadline: "Promote beU Delivery, one of Ethiopia's leading food delivery platforms, on premium digital LED screens across Addis Ababa. Showcase your brand to thousands of commuters, office workers, students, and families every day. beU makes it easy to order meals from hundreds of restaurants with fast delivery, affordable prices, exclusive offers, and real-time order tracking.",
-    description: "This Digital Out-of-Home (DOOH) campaign is designed to capture attention with vibrant visuals and compelling messaging in high-traffic locations. By displaying beU on premium LED screens throughout the city, the campaign reinforces brand awareness, encourages app downloads, and reminds people that delicious food is only a few taps away.",
+    subheadline: "Promote beU Delivery, one of Ethiopia's leading food delivery platforms, on premium digital LED screens across Addis Ababa. Showcase your brand to thousands of commuters, office workers, students, and families every day. beU makes it easy to order meals from hundreds of restaurants with fast delivery, affordable prices, exclusive offers, and real time order tracking.",
+    description: "This Digital Out of Home (DOOH) campaign is designed to capture attention with vibrant visuals and compelling messaging in high traffic locations. By displaying beU on premium LED screens throughout the city, the campaign reinforces brand awareness, encourages app downloads, and reminds people that delicious food is only a few taps away.",
     objectives: [
       "Increase brand awareness across Addis Ababa",
       "Drive mobile app downloads",
@@ -136,7 +136,7 @@ export const portfolio: PortfolioItem[] = [
     title: "Tracon Tower – Churchill LED Screen",
     headline: "Your Brand Deserves the Spotlight",
     subheadline: "Advertise your brand on the iconic Tracon Tower LED Screen, strategically positioned on Churchill Avenue in the heart of Addis Ababa. This premium digital billboard is located in one of the city's busiest commercial corridors, attracting thousands of commuters, pedestrians, business professionals, shoppers, and public transport passengers every day.",
-    description: "The Tracon Tower LED display offers exceptional visibility for both daytime and nighttime advertising with bright, high-resolution visuals. Whether you're launching a new product, promoting an event, or building brand awareness, this premium Digital Out-of-Home (DOOH) location ensures your campaign reaches a broad urban audience in one of Addis Ababa's highest-traffic areas.",
+    description: "The Tracon Tower LED display offers exceptional visibility for both daytime and nighttime advertising with bright, high resolution visuals. Whether you're launching a new product, promoting an event, or building brand awareness, this premium Digital Out of Home (DOOH) location ensures your campaign reaches a broad urban audience in one of Addis Ababa's highest traffic areas.",
     objectives: [
       "Build strong brand awareness",
       "Reach thousands of daily commuters",
@@ -166,8 +166,8 @@ export const portfolio: PortfolioItem[] = [
     youtubeId: "cc03Hz13ewU",
     title: "Emirates Airlines – Fly Better",
     headline: "Fly Better with Emirates",
-    subheadline: "Promote Emirates, one of the world's most recognized international airlines, on premium digital LED screens across Addis Ababa. Showcase the airline to thousands of business travelers, tourists, professionals, students, and families every day. Emirates is renowned for its extensive global network, award-winning onboard service, modern fleet, and seamless connections through its Dubai hub, serving destinations across six continents.",
-    description: "This Digital Out-of-Home (DOOH) campaign is designed to capture attention with high-impact visuals displayed on premium LED screens in Addis Ababa's busiest locations. Whether promoting international travel, holiday packages, or business destinations, the campaign delivers exceptional visibility, inspires travelers, and strengthens Emirates' premium brand presence.",
+    subheadline: "Promote Emirates, one of the world's most recognized international airlines, on premium digital LED screens across Addis Ababa. Showcase the airline to thousands of business travelers, tourists, professionals, students, and families every day. Emirates is renowned for its extensive global network, award winning onboard service, modern fleet, and seamless connections through its Dubai hub, serving destinations across six continents.",
+    description: "This Digital Out of Home (DOOH) campaign is designed to capture attention with high impact visuals displayed on premium LED screens in Addis Ababa's busiest locations. Whether promoting international travel, holiday packages, or business destinations, the campaign delivers exceptional visibility, inspires travelers, and strengthens Emirates' premium brand presence.",
     objectives: [
       "Increase brand awareness in Ethiopia",
       "Promote international travel and holiday destinations",
@@ -193,7 +193,7 @@ export const portfolio: PortfolioItem[] = [
       "Bole Airport VIP Entrance",
       "Near Bambis"
     ],
-    suggestedMessage: "Fly Better with Emirates\nWorldwide Destinations • Award-Winning Service • Seamless Connections\nBook Your Next Journey Today",
+    suggestedMessage: "Fly Better with Emirates\nWorldwide Destinations • Award Winning Service • Seamless Connections\nBook Your Next Journey Today",
     callToAction: "Experience comfort, luxury, and exceptional service with Emirates—connecting Addis Ababa to the world through Dubai."
   },
   {
@@ -205,8 +205,8 @@ export const portfolio: PortfolioItem[] = [
     youtubeId: "dctCqmgbwfw",
     title: "Maleda Foam – Upgrade Your Sleep",
     headline: "Sleep Better. Live Better.",
-    subheadline: "Promote Maleda Foam, one of Ethiopia's trusted manufacturers of high-quality mattresses, pillows, and sleep products, on premium digital LED screens across Addis Ababa. Put your brand in front of thousands of commuters, homeowners, families, newlyweds, students, and professionals every day. Maleda Foam is known for producing comfortable, durable, and affordable sleep solutions designed to improve everyday comfort and well-being.",
-    description: "This Digital Out-of-Home (DOOH) campaign is designed to maximize visibility through vibrant, high-impact visuals displayed on LED screens in Addis Ababa's busiest locations. Whether launching a new mattress collection, promoting seasonal offers, or strengthening brand recognition, this campaign helps Maleda Foam connect with customers at every stage of their buying journey.",
+    subheadline: "Promote Maleda Foam, one of Ethiopia's trusted manufacturers of high quality mattresses, pillows, and sleep products, on premium digital LED screens across Addis Ababa. Put your brand in front of thousands of commuters, homeowners, families, newlyweds, students, and professionals every day. Maleda Foam is known for producing comfortable, durable, and affordable sleep solutions designed to improve everyday comfort and well-being.",
+    description: "This Digital Out of Home (DOOH) campaign is designed to maximize visibility through vibrant, high impact visuals displayed on LED screens in Addis Ababa's busiest locations. Whether launching a new mattress collection, promoting seasonal offers, or strengthening brand recognition, this campaign helps Maleda Foam connect with customers at every stage of their buying journey.",
     objectives: [
       "Increase brand awareness",
       "Promote premium mattresses and sleep products",
@@ -244,7 +244,7 @@ export const portfolio: PortfolioItem[] = [
     title: "DStv Ethiopia – Entertainment Lives Here",
     headline: "Entertainment Lives Here",
     subheadline: "Promote DStv Ethiopia, one of the country's leading digital television and streaming platforms, on premium digital LED screens across Addis Ababa. Put your brand in front of thousands of families, football fans, movie lovers, professionals, and entertainment enthusiasts every day. DStv offers a wide range of live sports, blockbuster movies, international and local TV channels, kids' programming, news, and streaming services, delivering entertainment anytime, anywhere.",
-    description: "This Digital Out-of-Home (DOOH) campaign is designed to maximize visibility with bold, high-impact visuals displayed on LED screens in Addis Ababa's busiest locations. Whether promoting new subscription packages, exclusive sporting events, or premium entertainment, this campaign helps DStv reach potential subscribers and strengthen its position as Ethiopia's premier pay-TV provider.",
+    description: "This Digital Out of Home (DOOH) campaign is designed to maximize visibility with bold, high impact visuals displayed on LED screens in Addis Ababa's busiest locations. Whether promoting new subscription packages, exclusive sporting events, or premium entertainment, this campaign helps DStv reach potential subscribers and strengthen its position as Ethiopia's premier pay TV provider.",
     objectives: [
       "Increase brand awareness",
       "Drive new DStv subscriptions",

@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
@@ -17,6 +18,22 @@ export function generateStaticParams() {
     id: loc.id,
   }));
 }
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const resolvedParams = await params;
+  const location = locations.find((l) => l.id === resolvedParams.id);
+  
+  if (!location) {
+    return { title: 'Location Not Found' };
+  }
+
+  return {
+    title: `LED Advertising in ${location.area} | DOOH Advertising Addis Ababa`,
+    description: `Rent premium digital LED screens and billboards in ${location.area}, Ethiopia. Reach thousands of daily commuters with our DOOH advertising at ${location.name}.`,
+    keywords: [`LED Advertising in ${location.area}`, `Addis Ababa digital billboards`, `Outdoor LED screens Addis Ababa`, `Digital Out of Home (DOOH)`, `Digital billboard rental Ethiopia`],
+  };
+}
+
 
 export default async function LocationPage({ params }: PageProps) {
   const resolvedParams = await params;
@@ -74,14 +91,14 @@ export default async function LocationPage({ params }: PageProps) {
 
             <div className="prose prose-lg max-w-none">
               <p className="text-night/70">
-                Located in the heart of {location.area}, this premium {location.type} placement offers unparalleled visibility. With an estimated daily traffic of {location.dailyTraffic}, it&apos;s an ideal choice for brands looking to maximize their reach in a high-density area.
+                Located in the heart of {location.area}, this premium {location.type} digital billboard offers unparalleled visibility for DOOH advertising in Addis Ababa. With an estimated daily traffic of {location.dailyTraffic}, it&apos;s an ideal LED screen for brands looking to maximize their reach in a high density area in Ethiopia.
               </p>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
               <div>
                 <h3 className="font-display text-xl uppercase tracking-wide mb-4 text-night">
-                  Screen Specs
+                  LED Screen Specs
                 </h3>
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2 text-night/70">
