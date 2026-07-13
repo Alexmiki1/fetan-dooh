@@ -42,14 +42,24 @@ export default async function CampaignPage({ params }: PageProps) {
           <FadeIn>
             <div className="sticky top-32">
               <div className="relative aspect-[4/3] rounded-2xl overflow-hidden mb-6">
-                <Image
-                  src={item.image}
-                  alt={item.client}
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 1024px) 100vw, 50vw"
-                  priority
-                />
+                {item.youtubeId ? (
+                  <iframe
+                    src={`https://www.youtube.com/embed/${item.youtubeId}?autoplay=1&mute=1&loop=1&playlist=${item.youtubeId}&controls=0&showinfo=0&rel=0&playsinline=1&modestbranding=1`}
+                    title={item.client}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="absolute inset-0 w-full h-full object-cover pointer-events-none"
+                  />
+                ) : item.image ? (
+                  <Image
+                    src={item.image}
+                    alt={item.client}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                    priority
+                  />
+                ) : null}
               </div>
               
               <div className="flex flex-wrap gap-4 text-sm font-mono uppercase tracking-wider text-white/60">

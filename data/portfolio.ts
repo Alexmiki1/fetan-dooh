@@ -4,7 +4,8 @@ export interface PortfolioItem {
   campaignType: string;
   industry: string;
   results: string;
-  image: string;
+  image?: string;
+  youtubeId?: string;
   title?: string;
   headline?: string;
   subheadline?: string;
@@ -23,7 +24,7 @@ export const portfolio: PortfolioItem[] = [
     campaignType: "LED Campaign",
     industry: "Transport",
     results: "Reach Millions on the Move",
-    image: "/images/yango-campaign.png",
+    youtubeId: "kOXlxXSFgx0",
     title: "Yango Ethiopia – Your Ride, Right on Time",
     headline: "Reach Millions on the Move with Yango",
     subheadline: "Promote one of Ethiopia's most trusted ride-hailing apps on premium digital LED screens located across Addis Ababa. Put your brand in front of commuters, professionals, students, and travelers every day. Yango emphasizes convenient ride booking, upfront fares, real-time tracking, and safety features for riders.",
@@ -62,7 +63,7 @@ export const portfolio: PortfolioItem[] = [
     campaignType: "LED Campaign",
     industry: "Finance",
     results: "Banking Made Simple",
-    image: "/images/dashen-campaign.png",
+    youtubeId: "yf0JFJHtpzY",
     title: "Dashen Bank – Banking Made Simple",
     headline: "Your Future. Your Money. Your Bank.",
     subheadline: "Showcase Dashen Bank on premium digital LED screens and connect with thousands of customers across Addis Ababa. Promote modern banking solutions designed for individuals, businesses, and the growing digital economy.",
@@ -114,6 +115,45 @@ export const portfolio: PortfolioItem[] = [
       "Engineering professionals"
     ],
     suggestedMessage: "Building Dreams Into Reality\n🏗️ Construction Excellence\n🏢 Engineering Solutions\nBamaCon Engineering PLC"
+  },
+  {
+    id: "beu-delivery",
+    client: "beU Delivery",
+    campaignType: "LED Campaign",
+    industry: "FMCG",
+    results: "Fast Delivery • Hundreds of Restaurants",
+    youtubeId: "3WJsBEsSRKw",
+    title: "beU Delivery – Your Favorite Meals, Fast",
+    headline: "Hungry? beU Delivers.",
+    subheadline: "Promote beU Delivery, one of Ethiopia's leading food delivery platforms, on premium digital LED screens across Addis Ababa. Showcase your brand to thousands of commuters, office workers, students, and families every day. beU makes it easy to order meals from hundreds of restaurants with fast delivery, affordable prices, exclusive offers, and real-time order tracking.",
+    description: "This Digital Out-of-Home (DOOH) campaign is designed to capture attention with vibrant visuals and compelling messaging in high-traffic locations. By displaying beU on premium LED screens throughout the city, the campaign reinforces brand awareness, encourages app downloads, and reminds people that delicious food is only a few taps away.",
+    objectives: [
+      "Increase brand awareness across Addis Ababa",
+      "Drive mobile app downloads",
+      "Promote fast and affordable food delivery",
+      "Highlight restaurant variety and exclusive offers",
+      "Increase daily customer orders"
+    ],
+    targetAudience: [
+      "Office workers",
+      "University students",
+      "Busy professionals",
+      "Families",
+      "Young adults",
+      "Anyone looking for fast, reliable food delivery"
+    ],
+    locations: [
+      "Bole Friendship",
+      "Churchill",
+      "Merkato",
+      "CMC Roundabout",
+      "Bole Road",
+      "Wello Sefer",
+      "Bole Airport VIP Entrance",
+      "Near Bambis"
+    ],
+    suggestedMessage: "Hungry? beU Delivers.\nFast Delivery • Hundreds of Restaurants • Great Deals\nOrder Food Anytime, Anywhere\nDownload the beU App Today",
+    callToAction: "Enjoy your favorite meals delivered quickly to your home or office with beU Delivery."
   },
   {
     id: "safaricom",
