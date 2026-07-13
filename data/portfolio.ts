@@ -88,35 +88,6 @@ export const portfolio: PortfolioItem[] = [
     suggestedMessage: "Bank Smarter. Live Better.\nSecure Banking Solutions\nAnywhere. Anytime.\n\nDashen Bank"
   },
   {
-    id: "bamacon-engineering",
-    client: "BamaCon Engineering PLC",
-    campaignType: "LED Campaign",
-    industry: "Construction",
-    results: "Strong Foundations. Modern Solutions.",
-    image: "/images/bamacon-campaign.png",
-    title: "BamaCon Engineering PLC – Building Ethiopia’s Future",
-    headline: "Strong Foundations. Modern Solutions. Lasting Results.",
-    subheadline: "Showcase BamaCon Engineering PLC on premium digital LED screens and reach thousands of potential clients, investors, and decision-makers across Addis Ababa. With experience in building construction, infrastructure projects, and engineering solutions, BamaCon delivers quality projects built for the future.",
-    description: "BamaCon Engineering PLC transforms ideas into reliable structures through professional engineering, construction expertise, and innovative solutions. From commercial buildings and industrial projects to infrastructure development, BamaCon is committed to quality, safety, and excellence.",
-    objectives: [
-      "Increase brand visibility",
-      "Build trust with potential customers",
-      "Promote construction and engineering services",
-      "Showcase completed and ongoing projects",
-      "Reach businesses, investors, and property developers"
-    ],
-    targetAudience: [
-      "Real estate developers",
-      "Business owners",
-      "Government organizations",
-      "Investors",
-      "Property owners",
-      "Construction partners",
-      "Engineering professionals"
-    ],
-    suggestedMessage: "Building Dreams Into Reality\n🏗️ Construction Excellence\n🏢 Engineering Solutions\nBamaCon Engineering PLC"
-  },
-  {
     id: "beu-delivery",
     client: "beU Delivery",
     campaignType: "LED Campaign",
@@ -156,29 +127,151 @@ export const portfolio: PortfolioItem[] = [
     callToAction: "Enjoy your favorite meals delivered quickly to your home or office with beU Delivery."
   },
   {
-    id: "safaricom",
-    client: "Safaricom Ethiopia",
-    campaignType: "LED + Digital",
-    industry: "Telecom",
-    results: "5.1M reach with QR integration",
-    image: "/images/portfolio-safaricom.svg",
+    id: "tracon-tower-churchill",
+    client: "Tracon Tower",
+    campaignType: "LED Campaign",
+    industry: "All",
+    results: "Premium City-Center Location",
+    youtubeId: "4Nf9oPH91Ts",
+    title: "Tracon Tower – Churchill LED Screen",
+    headline: "Your Brand Deserves the Spotlight",
+    subheadline: "Advertise your brand on the iconic Tracon Tower LED Screen, strategically positioned on Churchill Avenue in the heart of Addis Ababa. This premium digital billboard is located in one of the city's busiest commercial corridors, attracting thousands of commuters, pedestrians, business professionals, shoppers, and public transport passengers every day.",
+    description: "The Tracon Tower LED display offers exceptional visibility for both daytime and nighttime advertising with bright, high-resolution visuals. Whether you're launching a new product, promoting an event, or building brand awareness, this premium Digital Out-of-Home (DOOH) location ensures your campaign reaches a broad urban audience in one of Addis Ababa's highest-traffic areas.",
+    objectives: [
+      "Build strong brand awareness",
+      "Reach thousands of daily commuters",
+      "Increase customer engagement",
+      "Promote new products and services",
+      "Drive foot traffic and sales"
+    ],
+    targetAudience: [
+      "Daily commuters",
+      "Office workers",
+      "Business professionals",
+      "University students",
+      "Shoppers",
+      "Local and international visitors"
+    ],
+    locations: [
+      "Churchill Road – Tracon Tower"
+    ],
+    suggestedMessage: "Your Brand Deserves the Spotlight\nReach Thousands Every Day\nBold • Bright • Unforgettable\nAdvertise on Tracon Tower LED Screen\nBe Seen. Be Remembered."
   },
   {
-    id: "ethiopian-airlines",
-    client: "Ethiopian Airlines",
-    campaignType: "Airport LED",
+    id: "emirates-airlines",
+    client: "Emirates Airlines",
+    campaignType: "LED Campaign",
     industry: "Aviation",
-    results: "Bole Airport premium placement",
-    image: "/images/portfolio-airlines.svg",
+    results: "Connecting Addis Ababa to the World",
+    youtubeId: "cc03Hz13ewU",
+    title: "Emirates Airlines – Fly Better",
+    headline: "Fly Better with Emirates",
+    subheadline: "Promote Emirates, one of the world's most recognized international airlines, on premium digital LED screens across Addis Ababa. Showcase the airline to thousands of business travelers, tourists, professionals, students, and families every day. Emirates is renowned for its extensive global network, award-winning onboard service, modern fleet, and seamless connections through its Dubai hub, serving destinations across six continents.",
+    description: "This Digital Out-of-Home (DOOH) campaign is designed to capture attention with high-impact visuals displayed on premium LED screens in Addis Ababa's busiest locations. Whether promoting international travel, holiday packages, or business destinations, the campaign delivers exceptional visibility, inspires travelers, and strengthens Emirates' premium brand presence.",
+    objectives: [
+      "Increase brand awareness in Ethiopia",
+      "Promote international travel and holiday destinations",
+      "Drive flight bookings",
+      "Highlight Emirates' premium travel experience",
+      "Reach travelers during peak commuting hours"
+    ],
+    targetAudience: [
+      "Business professionals",
+      "International travelers",
+      "Tourists",
+      "Families",
+      "Students traveling abroad",
+      "Frequent flyers"
+    ],
+    locations: [
+      "Bole Friendship",
+      "Churchill",
+      "Merkato",
+      "CMC Roundabout",
+      "Bole Road",
+      "Wello Sefer",
+      "Bole Airport VIP Entrance",
+      "Near Bambis"
+    ],
+    suggestedMessage: "Fly Better with Emirates\nWorldwide Destinations • Award-Winning Service • Seamless Connections\nBook Your Next Journey Today",
+    callToAction: "Experience comfort, luxury, and exceptional service with Emirates—connecting Addis Ababa to the world through Dubai."
   },
   {
-    id: "coca-cola",
-    client: "Coca-Cola",
-    campaignType: "Event Branding",
-    industry: "FMCG",
-    results: "Full festival activation at Meskel",
-    image: "/images/portfolio-coke.svg",
+    id: "maleda-foam",
+    client: "Maleda Foam",
+    campaignType: "LED Campaign",
+    industry: "All",
+    results: "Sleep Better. Live Better.",
+    youtubeId: "dctCqmgbwfw",
+    title: "Maleda Foam – Upgrade Your Sleep",
+    headline: "Sleep Better. Live Better.",
+    subheadline: "Promote Maleda Foam, one of Ethiopia's trusted manufacturers of high-quality mattresses, pillows, and sleep products, on premium digital LED screens across Addis Ababa. Put your brand in front of thousands of commuters, homeowners, families, newlyweds, students, and professionals every day. Maleda Foam is known for producing comfortable, durable, and affordable sleep solutions designed to improve everyday comfort and well-being.",
+    description: "This Digital Out-of-Home (DOOH) campaign is designed to maximize visibility through vibrant, high-impact visuals displayed on LED screens in Addis Ababa's busiest locations. Whether launching a new mattress collection, promoting seasonal offers, or strengthening brand recognition, this campaign helps Maleda Foam connect with customers at every stage of their buying journey.",
+    objectives: [
+      "Increase brand awareness",
+      "Promote premium mattresses and sleep products",
+      "Drive showroom visits",
+      "Increase product sales",
+      "Build customer trust and brand preference"
+    ],
+    targetAudience: [
+      "Homeowners",
+      "Families",
+      "Newly married couples",
+      "Apartment renters",
+      "Hotels and guest houses",
+      "Anyone looking for better sleep and quality mattresses"
+    ],
+    locations: [
+      "Bole Friendship",
+      "Churchill",
+      "Merkato",
+      "CMC Roundabout",
+      "Bole Road",
+      "Wello Sefer",
+      "Bole Airport VIP Entrance",
+      "Near Bambis"
+    ],
+    suggestedMessage: "Sleep Better. Live Better.\nPremium Mattresses • Quality Foam • Lasting Comfort\nUpgrade Your Sleep with Maleda Foam\nVisit your nearest Maleda Foam showroom today and discover the comfort you deserve."
   },
+  {
+    id: "dstv-ethiopia",
+    client: "DStv Ethiopia",
+    campaignType: "LED Campaign",
+    industry: "Telecom",
+    results: "Entertainment Lives Here",
+    youtubeId: "3wZLc2xMPpU",
+    title: "DStv Ethiopia – Entertainment Lives Here",
+    headline: "Entertainment Lives Here",
+    subheadline: "Promote DStv Ethiopia, one of the country's leading digital television and streaming platforms, on premium digital LED screens across Addis Ababa. Put your brand in front of thousands of families, football fans, movie lovers, professionals, and entertainment enthusiasts every day. DStv offers a wide range of live sports, blockbuster movies, international and local TV channels, kids' programming, news, and streaming services, delivering entertainment anytime, anywhere.",
+    description: "This Digital Out-of-Home (DOOH) campaign is designed to maximize visibility with bold, high-impact visuals displayed on LED screens in Addis Ababa's busiest locations. Whether promoting new subscription packages, exclusive sporting events, or premium entertainment, this campaign helps DStv reach potential subscribers and strengthen its position as Ethiopia's premier pay-TV provider.",
+    objectives: [
+      "Increase brand awareness",
+      "Drive new DStv subscriptions",
+      "Promote premium sports and entertainment",
+      "Highlight DStv Streaming and flexible viewing options",
+      "Strengthen customer loyalty"
+    ],
+    targetAudience: [
+      "Football and sports fans",
+      "Families",
+      "Movie and series enthusiasts",
+      "Young adults",
+      "Business professionals",
+      "Anyone looking for premium home entertainment"
+    ],
+    locations: [
+      "Bole Friendship",
+      "Churchill",
+      "Merkato",
+      "CMC Roundabout",
+      "Bole Road",
+      "Wello Sefer",
+      "Bole Airport VIP Entrance",
+      "Near Bambis"
+    ],
+    suggestedMessage: "Entertainment Lives Here\nLive Sports • Movies • Series • Kids • News\nWatch More with DStv Ethiopia\nSubscribe Today and Enjoy Entertainment Anytime, Anywhere."
+  }
 ];
 
 export const industries = [
