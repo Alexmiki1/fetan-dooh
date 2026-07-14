@@ -34,7 +34,7 @@ export default function Button({
   const base =
     "inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-medium transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:translate-y-0";
 
-  const classes = `${base} ${variants[variant]} ${className}`;
+  const classes = [base, variants[variant], className].filter(Boolean).join(" ").replace(/\s+/g, " ").trim();
 
   if (href) {
     return (
