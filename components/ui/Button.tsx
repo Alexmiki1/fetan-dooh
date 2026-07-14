@@ -15,7 +15,7 @@ interface ButtonProps {
 
 const variants: Record<ButtonVariant, string> = {
   primary:
-    "bg-gradient-to-r from-amber to-amber-dim text-white shadow-lg shadow-amber/25 hover:-translate-y-0.5 hover:shadow-amber/40",
+    "bg-[#fcb216] text-white shadow-lg shadow-amber/25 hover:-translate-y-0.5 hover:shadow-amber/40",
   ghost:
     "border border-white/20 text-white hover:border-amber/50 hover:text-amber",
   outline:

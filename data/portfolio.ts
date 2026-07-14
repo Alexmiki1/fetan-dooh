@@ -27,7 +27,7 @@ export const portfolio: PortfolioItem[] = [
     youtubeId: "kOXlxXSFgx0",
     title: "Yango Ethiopia – Your Ride, Right on Time",
     headline: "Reach Millions on the Move with Yango",
-    subheadline: "Promote one of Ethiopia's most trusted ride hailing apps on premium digital LED screens located across Addis Ababa. Put your brand in front of commuters, professionals, students, and travelers every day. Yango emphasizes convenient ride booking, upfront fares, real time tracking, and safety features for riders.",
+    subheadline: "Take Yango's brand visibility to the next level with our premium digital LED screens across Addis Ababa. Showcase your campaigns in high-traffic locations and connect with thousands of commuters, professionals, students, and travelers every day. Our dynamic LED advertising network ensures Yango stays visible where it matters most, driving awareness and reaching more potential riders.",
     description: "Yango is making daily travel in Ethiopia faster, easier, and more comfortable. This LED campaign is designed to maximize visibility by delivering bold, high impact visuals in high traffic locations. Digital Out of Home advertising ensures the message reaches thousands of people throughout the day, increasing brand awareness and encouraging app downloads.",
     objectives: [
       "Increase brand awareness",
@@ -194,7 +194,7 @@ export const portfolio: PortfolioItem[] = [
       "Near Bambis"
     ],
     suggestedMessage: "Fly Better with Emirates\nWorldwide Destinations • Award Winning Service • Seamless Connections\nBook Your Next Journey Today",
-    callToAction: "Experience comfort, luxury, and exceptional service with Emirates—connecting Addis Ababa to the world through Dubai."
+    callToAction: "Promote your brand on our premium digital LED screens across Addis Ababa. Reach thousands of potential customers every day with high-impact advertising in strategic locations. Contact us today to launch your next campaign."
   },
   {
     id: "maleda-foam",

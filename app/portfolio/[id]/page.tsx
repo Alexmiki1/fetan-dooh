@@ -144,23 +144,14 @@ export default async function CampaignPage({ params }: PageProps) {
               )}
             </div>
 
-            {item.suggestedMessage && (
-              <div className="bg-night p-8 rounded-2xl border border-white/10">
-                <h3 className="font-mono text-xs uppercase tracking-wider text-amber mb-4">
-                  Suggested LED Message
-                </h3>
-                <p className="text-xl font-display uppercase tracking-wide leading-relaxed whitespace-pre-line">
-                  {item.suggestedMessage}
-                </p>
-              </div>
-            )}
 
-            {item.callToAction && (
-              <div className="pt-6 border-t border-white/10">
-                <p className="text-lg text-white/90 mb-6">{item.callToAction}</p>
-                <Button href="/contact">Start Your Campaign</Button>
-              </div>
-            )}
+
+            <div className="pt-6 border-t border-white/10">
+              <p className="text-lg text-white/90 mb-6">
+                Promote your brand on our premium digital LED screens across Addis Ababa. Reach thousands of potential customers every day with high-impact advertising in strategic locations. Contact us today to launch your next campaign.
+              </p>
+              <Button href="/contact">Start Your Campaign</Button>
+            </div>
           </FadeIn>
         </div>
       </div>
