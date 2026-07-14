@@ -131,10 +131,7 @@ export const portfolio: PortfolioItem[] = [
     client: "Coca Cola",
     campaignType: "LED Campaign",
     industry: "All",
-    category: "Commercial",
-    imageUrl: "/images/locations/churchill-street.jpg",
-    gallery: ["/images/locations/churchill-street.jpg"],
-    videoUrl: "",
+
     results: "Premium City-Center Location",
     youtubeId: "4Nf9oPH91Ts",
     title: "Coca Cola – Churchill LED Screen",
