@@ -18,9 +18,10 @@ const footerLinks = {
     { label: "Blog", href: "/blog" },
     { label: "Contact", href: "/contact" },
   ],
-  Legal: [
-    { label: "Privacy Policy", href: "#" },
-    { label: "Terms of Service", href: "#" },
+  Socials: [
+    { label: "Facebook", href: "https://web.facebook.com/fetanads" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/company/fetanadvertising/" },
+    { label: "YouTube", href: "https://www.youtube.com/channel/UC5fVeNbFLlSAp7UuUN5UE4w" },
   ],
 };
 
@@ -28,7 +29,7 @@ export default function Footer() {
   return (
     <footer className="bg-night border-t border-white/5">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-12">
           <div className="lg:col-span-2">
             <Logo className="h-12" />
             <p className="mt-4 text-white/50 text-sm leading-relaxed max-w-xs">
@@ -77,12 +78,11 @@ export default function Footer() {
           <p className="text-white/30 text-sm">
             &copy; {new Date().getFullYear()} Fetan Outdoor Advertising. All rights reserved.
           </p>
-          <a
-            href="#"
-            className="text-sm text-white/40 hover:text-amber transition-colors"
-          >
-            Back to top ↑
-          </a>
+          <div className="flex flex-wrap items-center gap-4 sm:gap-6">
+            <Link href="#" className="text-sm text-white/40 hover:text-amber transition-colors">Privacy Policy</Link>
+            <Link href="#" className="text-sm text-white/40 hover:text-amber transition-colors">Terms of Service</Link>
+            <a href="#" className="text-sm text-white/40 hover:text-amber transition-colors">Back to top ↑</a>
+          </div>
         </div>
       </div>
     </footer>

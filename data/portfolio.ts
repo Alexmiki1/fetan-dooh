@@ -272,6 +272,45 @@ export const portfolio: PortfolioItem[] = [
       "Near Bambis"
     ],
     suggestedMessage: "Entertainment Lives Here\nLive Sports • Movies • Series • Kids • News\nWatch More with DStv Ethiopia\nSubscribe Today and Enjoy Entertainment Anytime, Anywhere."
+  },
+  {
+    id: "zemen-gebeya",
+    client: "Zemen Gebeya",
+    campaignType: "LED Campaign",
+    industry: "E-commerce",
+    youtubeId: "sh2-UnASuf4",
+    results: "Empowering Ethiopia's Digital Marketplace",
+    title: "Zemen Gebeya – Empowering Ethiopia's Digital Marketplace",
+    headline: "Zemen Gebeya Digital LED Screen Campaign",
+    subheadline: "Promote Zemen Gebeya, one of Ethiopia's growing digital marketplace platforms, on premium digital LED screens across Addis Ababa. Connect your brand with thousands of shoppers, entrepreneurs, business owners, and daily commuters through high-impact Digital Out of Home (DOOH) advertising. Zemen Gebeya brings buyers and sellers together on a trusted online marketplace, making it easier to discover products, services, and business opportunities across Ethiopia.",
+    description: "This DOOH campaign is designed to maximize brand visibility with vibrant, high-resolution visuals displayed on LED screens in Addis Ababa's busiest locations. By showcasing Zemen Gebeya's platform, features, and growing marketplace, the campaign increases public awareness, attracts new users, and strengthens its position as a trusted destination for online buying and selling.",
+    objectives: [
+      "Increase brand awareness across Addis Ababa",
+      "Drive new user registrations",
+      "Encourage buyers and sellers to join the platform",
+      "Promote Zemen Gebeya's products and marketplace features",
+      "Strengthen trust and customer engagement"
+    ],
+    targetAudience: [
+      "Online shoppers",
+      "Small and medium-sized business owners",
+      "Entrepreneurs",
+      "Retailers and wholesalers",
+      "Young professionals",
+      "Students",
+      "Daily commuters"
+    ],
+    locations: [
+      "Bole Friendship",
+      "Churchill",
+      "Merkato",
+      "CMC Roundabout",
+      "Bole Road",
+      "Wello Sefer",
+      "Bole Airport VIP Entrance",
+      "Near Bambis"
+    ],
+    callToAction: "Promote your brand on our premium digital LED screens across Addis Ababa. Reach thousands of potential customers every day with high-impact advertising in strategic locations. Contact us today to launch your next campaign."
   }
 ];
 
@@ -283,4 +322,5 @@ export const industries = [
   "Aviation",
   "Transport",
   "Construction",
+  "E-commerce",
 ] as const;
