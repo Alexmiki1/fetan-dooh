@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "DOOH Advertising Addis Ababa | Premium LED Screens in Ethiopia",
     description:
       "Advertise on premium digital LED screens across Addis Ababa. Reach thousands daily with high impact DOOH advertising at prime locations in Ethiopia.",
-    url: "https://fetanads.et",
+    url: "https://dooh.et",
     siteName: "Fetan Outdoor Advertising",
     locale: "en_US",
     type: "website",
