@@ -1,6 +1,6 @@
 export const contact = {
-  phone: "0913001010",
-  phoneDisplay: "0913 001 010",
+  phone: "+251913001010",
+  phoneDisplay: "+251 913 001 010",
   phoneInternational: "+251 913 001 010",
   whatsapp: "251913001010",
   email: "Alexxissmiki@gmail.com",

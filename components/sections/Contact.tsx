@@ -83,6 +83,7 @@ export default function Contact() {
                     {...register("name")}
                     placeholder="Name *"
                     className={inputClass}
+                    required
                   />
                   {errors.name && (
                     <p className="text-red-400 text-xs mt-1">{errors.name.message}</p>
@@ -104,6 +105,7 @@ export default function Contact() {
                     type="email"
                     placeholder="Email *"
                     className={inputClass}
+                    required
                   />
                   {errors.email && (
                     <p className="text-red-400 text-xs mt-1">{errors.email.message}</p>
@@ -114,6 +116,7 @@ export default function Contact() {
                     {...register("phone")}
                     placeholder="Phone *"
                     className={inputClass}
+                    required
                   />
                   {errors.phone && (
                     <p className="text-red-400 text-xs mt-1">{errors.phone.message}</p>

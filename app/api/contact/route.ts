@@ -13,14 +13,19 @@ const contactSchema = z.object({
 
 export async function POST(request: Request) {
   try {
-    const body = await request.json();
+    let body;
+    try {
+      body = await request.json();
+    } catch (e) {
+      return NextResponse.json({ error: "Invalid JSON body" }, { status: 400 });
+    }
     const data = contactSchema.parse(body);
 
-    const resend = new Resend(process.env.RESEND_API_KEY);
+    const resend = new Resend(process.env.RESEND_API_KEY?.trim());
 
     const result = await resend.emails.send({
       from: "Fetan Website <onboarding@resend.dev>",
-      to: process.env.CONTACT_EMAIL || "Alexxissmiki@gmail.com",
+      to: process.env.CONTACT_EMAIL?.trim() || "alexxissmiki@gmail.com",
       replyTo: data.email,
       subject: `New inquiry from ${data.name} — ${data.service}`,
       html: `
