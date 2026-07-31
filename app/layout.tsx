@@ -39,7 +39,16 @@ export const metadata: Metadata = {
     "Digital advertising screens Ethiopia",
     "LED advertising company Ethiopia",
     "Digital signage Addis Ababa",
-    "Billboard advertising Ethiopia"
+    "Billboard advertising Ethiopia",
+    "OOH advertising Ethiopia",
+    "Out of Home media Addis Ababa",
+    "Premium outdoor advertising",
+    "Smart digital billboards Addis Ababa",
+    "Programmatic DOOH Ethiopia",
+    "AI targeted outdoor advertising",
+    "Data-driven DOOH advertising",
+    "Transit advertising Addis Ababa",
+    "Outdoor marketing campaigns Ethiopia"
   ],
   openGraph: {
     title: "DOOH Advertising Addis Ababa | Premium LED Screens in Ethiopia",
