@@ -14,6 +14,8 @@ const navLinks = [
   { href: "/blog", label: "Blog" },
   { href: "/about", label: "About" },
   { href: "/#faq", label: "FAQ" },
+  { href: "https://www.fetanadvertising.com/", label: "Fetan Advertising", external: true },
+  { href: "https://www.fetanled.com/", label: "Fetan LED", external: true },
 ];
 
 export default function Navbar() {
@@ -40,6 +42,8 @@ export default function Navbar() {
             <li key={link.href}>
               <Link
                 href={link.href}
+                target={link.external ? "_blank" : undefined}
+                rel={link.external ? "noopener noreferrer" : undefined}
                 className={`text-sm font-medium transition-colors ${
                   scrolled ? "text-amber hover:text-amber-dim" : "text-night hover:text-night/70"
                 }`}
@@ -101,6 +105,8 @@ export default function Navbar() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
+                    target={link.external ? "_blank" : undefined}
+                    rel={link.external ? "noopener noreferrer" : undefined}
                     onClick={() => setMobileOpen(false)}
                     className="block py-2 text-amber font-medium hover:text-amber-dim transition-colors"
                   >
