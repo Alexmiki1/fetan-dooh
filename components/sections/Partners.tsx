@@ -31,7 +31,7 @@ export default function Partners() {
                 alt={partner.name}
                 width={160}
                 height={64}
-                className="max-h-12 md:max-h-14 w-auto object-contain grayscale-0 opacity-100 group-hover:grayscale group-hover:opacity-70 transition-all duration-300"
+                className="max-h-12 md:max-h-14 w-auto object-contain grayscale opacity-70"
               />
             </motion.div>
           ))}
