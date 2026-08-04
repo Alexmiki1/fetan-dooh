@@ -14,8 +14,6 @@ const navLinks = [
   { href: "/blog", label: "Blog" },
   { href: "/about", label: "About" },
   { href: "/#faq", label: "FAQ" },
-  { href: "https://www.fetanadvertising.com/", label: "Fetan Advertising", external: true },
-  { href: "https://www.fetanled.com/", label: "Fetan LED", external: true },
 ];
 
 export default function Navbar() {

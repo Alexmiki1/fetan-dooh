@@ -9,6 +9,7 @@ import Testimonials from "@/components/sections/Testimonials";
 import About from "@/components/sections/About";
 import FAQ from "@/components/sections/FAQ";
 import Contact from "@/components/sections/Contact";
+import SisterCompanies from "@/components/sections/SisterCompanies";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
       <Testimonials />
       <About />
       <FAQ />
+      <SisterCompanies />
       <Contact />
     </>
   );
