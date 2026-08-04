@@ -40,8 +40,6 @@ export default function Navbar() {
             <li key={link.href}>
               <Link
                 href={link.href}
-                target={link.external ? "_blank" : undefined}
-                rel={link.external ? "noopener noreferrer" : undefined}
                 className={`text-sm font-medium transition-colors ${
                   scrolled ? "text-amber hover:text-amber-dim" : "text-night hover:text-night/70"
                 }`}
@@ -103,8 +101,6 @@ export default function Navbar() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    target={link.external ? "_blank" : undefined}
-                    rel={link.external ? "noopener noreferrer" : undefined}
                     onClick={() => setMobileOpen(false)}
                     className="block py-2 text-amber font-medium hover:text-amber-dim transition-colors"
                   >
