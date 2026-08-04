@@ -40,4 +40,29 @@ export const partners: Partner[] = [
     name: "Dahabshiil",
     logo: "/images/partners/dahabshiil.png",
   },
+  {
+    id: "coca-cola",
+    name: "Coca-Cola",
+    logo: "/images/partners/coca-cola.png",
+  },
+  {
+    id: "zemen-bank",
+    name: "Zemen Bank",
+    logo: "/images/partners/zemen-bank.png",
+  },
+  {
+    id: "scope-lubricants",
+    name: "Scope Lubricants",
+    logo: "/images/partners/scope-lubricants.png",
+  },
+  {
+    id: "awash-bank",
+    name: "Awash Bank",
+    logo: "/images/partners/awash-bank.png",
+  },
+  {
+    id: "dema-hope",
+    name: "Dema Hope Real Estate",
+    logo: "/images/partners/dema-hope.png",
+  },
 ];

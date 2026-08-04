@@ -5,7 +5,7 @@ import Button from "@/components/ui/Button";
 import { stats } from "@/data/stats";
 import { marqueeLocations } from "@/data/locations";
 
-const words = ["Reach", "Thousands", "Every", "Day", "with", "Premium", "Outdoor", "Advertising."];
+const words = ["Boosting", "Brands", "Through", "Premium", "DOOH", "Advertising", "Solutions", "in", "Addis", "Ababa"];
 
 export default function Hero() {
   return (
