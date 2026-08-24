@@ -3,7 +3,7 @@ export const contact = {
   phoneDisplay: "+251 913 001 010",
   phoneInternational: "+251 913 001 010",
   whatsapp: "251913001010",
-  email: "contact@fetanads.com",
+  email: "contact@dooh.et",
   address: "22 Haile Gebreselassie St, IPS Building, Addis Ababa, Ethiopia",
   mapLink: "https://maps.app.goo.gl/hmofJc9Ne21sEA83A",
   mapEmbed:

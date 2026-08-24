@@ -1,6 +1,5 @@
-import { Resend } from "resend";
+import nodemailer from "nodemailer";
 import { z } from "zod";
-import { NextResponse } from "next/server";
 
 const contactSchema = z.object({
   name: z.string().min(2),
@@ -12,20 +11,58 @@ const contactSchema = z.object({
 });
 
 export async function POST(request: Request) {
+  const smtpHost = process.env.SMTP_HOST;
+  const smtpPort = parseInt(process.env.SMTP_PORT ?? "587", 10);
+  const smtpUser = process.env.SMTP_USER;
+  const smtpPass = process.env.SMTP_PASS;
+  const to = process.env.CONTACT_EMAIL ?? "contact@dooh.et";
+  const from =
+    process.env.SMTP_FROM_EMAIL ?? `Fetan DOOH <${smtpUser}>`;
+
+  if (!smtpHost || !smtpUser || !smtpPass) {
+    return Response.json(
+      { error: "Email is not configured on the server." },
+      { status: 500 },
+    );
+  }
+
+  let body: unknown;
   try {
-    let body;
-    try {
-      body = await request.json();
-    } catch (e) {
-      return NextResponse.json({ error: "Invalid JSON body" }, { status: 400 });
+    body = await request.json();
+  } catch {
+    return Response.json({ error: "Invalid JSON body." }, { status: 400 });
+  }
+
+  let data: z.infer<typeof contactSchema>;
+  try {
+    data = contactSchema.parse(body);
+  } catch (error) {
+    if (error instanceof z.ZodError) {
+      return Response.json(
+        { error: "Validation failed", details: error.issues },
+        { status: 400 },
+      );
     }
-    const data = contactSchema.parse(body);
+    return Response.json(
+      { error: "Invalid request data." },
+      { status: 400 },
+    );
+  }
 
-    const resend = new Resend(process.env.RESEND_API_KEY?.trim());
+  const transporter = nodemailer.createTransport({
+    host: smtpHost,
+    port: smtpPort,
+    secure: smtpPort === 465,
+    auth: {
+      user: smtpUser,
+      pass: smtpPass,
+    },
+  });
 
-    const result = await resend.emails.send({
-      from: "Fetan Website <onboarding@resend.dev>",
-      to: process.env.CONTACT_EMAIL?.trim() || "alexxissmiki@gmail.com",
+  try {
+    await transporter.sendMail({
+      from,
+      to,
       replyTo: data.email,
       subject: `New inquiry from ${data.name} — ${data.service}`,
       html: `
@@ -39,26 +76,12 @@ export async function POST(request: Request) {
         <p>${data.message}</p>
       `,
     });
-
-    console.log("Resend Result:", result);
-
-    if (result.error) {
-      console.error("Resend API Error:", result.error);
-      return NextResponse.json({ error: result.error.message }, { status: 400 });
-    }
-
-    return NextResponse.json({ success: true, id: result.data?.id });
-  } catch (error) {
-    if (error instanceof z.ZodError) {
-      return NextResponse.json(
-        { error: "Validation failed", details: error.issues },
-        { status: 400 }
-      );
-    }
-    console.error("Contact form error:", error);
-    return NextResponse.json(
-      { error: "Failed to send message" },
-      { status: 500 }
-    );
+  } catch (err) {
+    const message =
+      err instanceof Error ? err.message : "Failed to send message.";
+    console.error("Contact form SMTP error:", err);
+    return Response.json({ error: message }, { status: 502 });
   }
+
+  return Response.json({ success: true });
 }
