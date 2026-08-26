@@ -31,6 +31,7 @@ export default function Partners() {
                 alt={partner.name}
                 width={160}
                 height={64}
+                style={partner.scale ? { transform: `scale(${partner.scale})` } : undefined}
                 className="max-w-[120px] md:max-w-[160px] max-h-16 md:max-h-20 w-auto object-contain grayscale opacity-70"
               />
             </motion.div>

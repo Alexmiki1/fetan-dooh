@@ -2,6 +2,8 @@ export interface Partner {
   id: string;
   name: string;
   logo: string;
+  /** Optional scale multiplier for visually-small logos (default 1) */
+  scale?: number;
 }
 
 export const partners: Partner[] = [
@@ -54,15 +56,18 @@ export const partners: Partner[] = [
     id: "scope-lubricants",
     name: "Scope Lubricants",
     logo: "/images/partners/scope-lubricants.png",
+    scale: 1.6,
   },
   {
     id: "awash-bank",
     name: "Awash Bank",
     logo: "/images/partners/awash-bank.png",
+    scale: 1.6,
   },
   {
     id: "dema-hope",
     name: "Dema Hope Real Estate",
     logo: "/images/partners/dema-hope.png",
+    scale: 1.6,
   },
 ];
