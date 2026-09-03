@@ -1,8 +1,8 @@
 export const contact = {
-  phone: "+251913001010",
-  phoneDisplay: "+251 913 001 010",
-  phoneInternational: "+251 913 001 010",
-  whatsapp: "251913001010",
+  phone: "0970757575",
+  phoneDisplay: "0970 757 575",
+  phoneInternational: "+251 970 757 575",
+  whatsapp: "251970757575",
   email: "contact@dooh.et",
   address: "22 Haile Gebreselassie St, IPS Building, Addis Ababa, Ethiopia",
   mapLink: "https://maps.app.goo.gl/hmofJc9Ne21sEA83A",
