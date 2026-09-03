@@ -1,6 +1,6 @@
 export const contact = {
-  phone: "0970757575",
-  phoneDisplay: "0970 757 575",
+  phone: "+251970757575",
+  phoneDisplay: "+251 970 757 575",
   phoneInternational: "+251 970 757 575",
   whatsapp: "251970757575",
   email: "contact@dooh.et",
