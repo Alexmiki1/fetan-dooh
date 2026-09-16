@@ -1,6 +1,5 @@
 import SectionHead from "@/components/ui/SectionHead";
 import FadeIn from "@/components/ui/FadeIn";
-import Image from "next/image";
 
 export default function About() {
   return (
@@ -55,12 +54,13 @@ export default function About() {
 
           <FadeIn delay={0.3} className="h-full">
             <div className="relative rounded-2xl overflow-hidden h-full min-h-[400px] shadow-2xl">
-              <Image
-                src="/images/team-meeting.png"
-                alt="About Fetan Outdoor Advertising"
-                fill
-                className="object-cover"
-                sizes="(max-width: 1024px) 100vw, 50vw"
+              <video
+                src="/1221.webm"
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-night/80 via-transparent to-transparent" />
               <div className="absolute bottom-8 left-0 right-0 text-center">
