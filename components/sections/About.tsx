@@ -54,13 +54,12 @@ export default function About() {
 
           <FadeIn delay={0.3} className="h-full">
             <div className="relative rounded-2xl overflow-hidden h-full min-h-[400px] shadow-2xl">
-              <video
-                src="/1221.webm"
-                autoPlay
-                loop
-                muted
-                playsInline
+              <iframe
+                src="https://www.youtube.com/embed/8k6Pk9ib_0w?autoplay=1&loop=1&playlist=8k6Pk9ib_0w&mute=1&controls=0&showinfo=0&rel=0&modestbranding=1"
                 className="w-full h-full object-cover"
+                allow="autoplay; encrypted-media"
+                allowFullScreen
+                title="About Fetan Outdoor Advertising"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-night/80 via-transparent to-transparent" />
               <div className="absolute bottom-8 left-0 right-0 text-center">
