@@ -14,6 +14,7 @@ export interface Location {
   designResolution?: string;
   physicalDimensions?: string;
   aspectRatio?: string;
+  mapLink?: string;
 }
 
 export const locations: Location[] = [
@@ -31,6 +32,7 @@ export const locations: Location[] = [
     designResolution: "1920 × 576 px",
     physicalDimensions: "10 m × 3 m",
     aspectRatio: "3.33:1 (Ultra Wide)",
+    mapLink: "https://maps.app.goo.gl/VBMgDoYqm2w5RutN7",
   },
   {
     id: "22-ag-grace",
@@ -61,6 +63,7 @@ export const locations: Location[] = [
     designResolution: "1336 × 768 px",
     physicalDimensions: "7.6 m × 5.7 m",
     aspectRatio: "1.74:1",
+    mapLink: "https://maps.app.goo.gl/X3jnWJpThK3kGxNaA",
   },
   {
     id: "bole-medhanialem",
@@ -76,6 +79,7 @@ export const locations: Location[] = [
     designResolution: "1280 × 1066 px",
     physicalDimensions: "6 m × 5 m",
     aspectRatio: "1.20:1",
+    mapLink: "https://maps.app.goo.gl/wKMeprwehhpwyurg7",
   },
   {
     id: "merkato",
