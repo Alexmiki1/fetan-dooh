@@ -50,6 +50,9 @@ export const metadata: Metadata = {
     "Transit advertising Addis Ababa",
     "Outdoor marketing campaigns Ethiopia"
   ],
+  icons: {
+    icon: "/white.png",
+  },
   openGraph: {
     title: "DOOH Advertising Addis Ababa | Premium LED Screens in Ethiopia",
     description:
