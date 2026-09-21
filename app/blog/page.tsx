@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: "DOOH Advertising Blog | Insights on LED Billboards in Ethiopia",
   description: "Read the latest insights on DOOH advertising, LED billboard costs, and outdoor marketing strategies in Addis Ababa and Ethiopia.",
   keywords: ["DOOH advertising Addis Ababa", "Outdoor digital advertising services Ethiopia", "LED billboard advertising company"],
+  alternates: {
+    canonical: "https://dooh.et/blog",
+  },
 };
 
 export default function BlogPage() {

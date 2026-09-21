@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: "Services — Fetan Outdoor Advertising",
   description:
     "LED screens, transit branding, event activations, digital campaigns, and creative services across Ethiopia.",
+  alternates: {
+    canonical: "https://dooh.et/services",
+  },
 };
 
 export default function ServicesPage() {

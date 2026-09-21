@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "About — Fetan Outdoor Advertising",
   description:
     "Learn about Fetan Outdoor Advertising — Ethiopia's leading outdoor media company since 2016.",
+  alternates: {
+    canonical: "https://dooh.et/about",
+  },
 };
 
 const timeline = [

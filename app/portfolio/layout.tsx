@@ -4,6 +4,9 @@ export const metadata: Metadata = {
   title: "Portfolio — Fetan Outdoor Advertising",
   description:
     "Browse 400+ outdoor advertising campaigns for Ethiopia's leading brands.",
+  alternates: {
+    canonical: "https://dooh.et/portfolio",
+  },
 };
 
 export default function PortfolioLayout({

@@ -53,6 +53,9 @@ export const metadata: Metadata = {
   icons: {
     icon: "/white.png",
   },
+  alternates: {
+    canonical: "https://dooh.et",
+  },
   openGraph: {
     title: "DOOH Advertising Addis Ababa | Premium LED Screens in Ethiopia",
     description:

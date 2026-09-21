@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "Contact — Fetan Outdoor Advertising",
   description:
     "Get in touch with Fetan Outdoor Advertising for LED and transit branding campaigns.",
+  alternates: {
+    canonical: "https://dooh.et/contact",
+  },
 };
 
 export default function ContactPage() {

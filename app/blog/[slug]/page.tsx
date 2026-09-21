@@ -27,6 +27,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: `${post.title} | DOOH Advertising Addis Ababa`,
     description: post.excerpt,
+    alternates: {
+      canonical: `https://dooh.et/blog/${post.slug}`,
+    },
   };
 }
 
