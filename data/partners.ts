@@ -70,4 +70,29 @@ export const partners: Partner[] = [
     logo: "/images/partners/dema-hope.png",
     scale: 1.6,
   },
+  {
+    id: "l1",
+    name: "Partner L1",
+    logo: "/images/partners/l1.png",
+  },
+  {
+    id: "l2",
+    name: "Partner L2",
+    logo: "/images/partners/l2.png",
+  },
+  {
+    id: "l3",
+    name: "Partner L3",
+    logo: "/images/partners/l3.png",
+  },
+  {
+    id: "l4",
+    name: "Partner L4",
+    logo: "/images/partners/l4.png",
+  },
+  {
+    id: "l5",
+    name: "Partner L5",
+    logo: "/images/partners/l5.png",
+  },
 ];
