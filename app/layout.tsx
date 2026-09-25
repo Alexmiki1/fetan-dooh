@@ -28,7 +28,7 @@ const spaceMono = Space_Mono({
 export const metadata: Metadata = {
   title: "DOOH Advertising Addis Ababa | Premium LED Screens in Ethiopia",
   description:
-    "Advertise on premium digital LED screens across Addis Ababa. Reach thousands daily with high impact DOOH advertising at prime locations in Ethiopia.",
+    "Advertise on premium digital LED screens across Addis Ababa. Reach thousands daily with high impact DOOH advertising at prime locations in Ethiopia. Fetan Outdoor Advertising offers LED billboards, digital signage, and outdoor media solutions in Bole, Churchill, and Medhanialem areas.",
   keywords: [
     "DOOH advertising Addis Ababa",
     "Digital Out of Home advertising Ethiopia",
@@ -48,7 +48,12 @@ export const metadata: Metadata = {
     "AI targeted outdoor advertising",
     "Data-driven DOOH advertising",
     "Transit advertising Addis Ababa",
-    "Outdoor marketing campaigns Ethiopia"
+    "Outdoor marketing campaigns Ethiopia",
+    "Bole Friendship LED screen",
+    "Churchill Road digital billboard",
+    "Bole Medhanialem advertising",
+    "Addis Ababa LED displays",
+    "Ethiopia outdoor media"
   ],
   icons: {
     icon: "/white.png",
@@ -82,6 +87,12 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  other: {
+    "geo.region": "ET-AA",
+    "geo.placename": "Addis Ababa",
+    "geo.position": "9.0145;38.76",
+    "ICBM": "9.0145, 38.76",
+  },
 };
 
 export default function RootLayout({
@@ -89,11 +100,55 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    name: "Fetan Outdoor Advertising",
+    description: "Premium DOOH advertising with LED screens across Addis Ababa, Ethiopia",
+    url: "https://dooh.et",
+    telephone: "+251970757575",
+    email: "contact@dooh.et",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "22 Haile Gebreselassie St, IPS Building",
+      addressLocality: "Addis Ababa",
+      addressRegion: "AA",
+      addressCountry: "ET",
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: 9.0145,
+      longitude: 38.76,
+    },
+    areaServed: {
+      "@type": "City",
+      name: "Addis Ababa",
+    },
+    priceRange: "$$",
+    openingHoursSpecification: {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      opens: "08:00",
+      closes: "18:00",
+    },
+    sameAs: [
+      "https://www.facebook.com/fetanadvertising",
+      "https://www.linkedin.com/company/fetan-outdoor-advertising",
+      "https://www.instagram.com/fetanadvertising",
+    ],
+  };
+
   return (
     <html
       lang="en"
       className={`${anton.variable} ${inter.variable} ${spaceMono.variable} scroll-smooth`}
     >
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className="font-body bg-night text-paper antialiased">
         <Navbar />
         <main>{children}</main>
