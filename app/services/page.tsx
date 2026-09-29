@@ -1,22 +1,18 @@
 import type { Metadata } from "next";
-import { headers } from "next/headers";
 import SectionHead from "@/components/ui/SectionHead";
 import FadeIn from "@/components/ui/FadeIn";
 import Button from "@/components/ui/Button";
 import { services } from "@/data/services";
 
 export async function generateMetadata(): Promise<Metadata> {
-  const headersList = await headers();
-  const host = headersList.get("host") || "dooh.et";
-  const protocol = headersList.get("x-forwarded-proto") || "https";
-  const baseUrl = `${protocol}://${host}`;
+  const canonicalDomain = process.env.NEXT_PUBLIC_CANONICAL_DOMAIN || "https://dooh.et";
 
   return {
     title: "Services — Fetan Outdoor Advertising",
     description:
       "LED screens, transit branding, event activations, digital campaigns, and creative services across Ethiopia.",
     alternates: {
-      canonical: `${baseUrl}/services`,
+      canonical: `${canonicalDomain}/services`,
     },
   };
 }

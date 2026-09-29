@@ -27,10 +27,7 @@ const spaceMono = Space_Mono({
 });
 
 export async function generateMetadata(): Promise<Metadata> {
-  const headersList = await headers();
-  const host = headersList.get("host") || "dooh.et";
-  const protocol = headersList.get("x-forwarded-proto") || "https";
-  const baseUrl = `${protocol}://${host}`;
+  const canonicalDomain = process.env.NEXT_PUBLIC_CANONICAL_DOMAIN || "https://dooh.et";
 
   return {
     title: "DOOH Advertising Addis Ababa | Premium LED Screens in Ethiopia",
@@ -66,13 +63,13 @@ export async function generateMetadata(): Promise<Metadata> {
       icon: "/white.png",
     },
     alternates: {
-      canonical: baseUrl,
+      canonical: canonicalDomain,
     },
     openGraph: {
       title: "DOOH Advertising Addis Ababa | Premium LED Screens in Ethiopia",
       description:
         "Advertise on premium digital LED screens across Addis Ababa. Reach thousands daily with high impact DOOH advertising at prime locations in Ethiopia.",
-      url: baseUrl,
+      url: canonicalDomain,
       siteName: "Fetan Outdoor Advertising",
       locale: "en_US",
       type: "website",
@@ -103,22 +100,19 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
-export default async function RootLayout({
+export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const headersList = await headers();
-  const host = headersList.get("host") || "dooh.et";
-  const protocol = headersList.get("x-forwarded-proto") || "https";
-  const baseUrl = `${protocol}://${host}`;
+  const canonicalDomain = process.env.NEXT_PUBLIC_CANONICAL_DOMAIN || "https://dooh.et";
 
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: "Fetan Outdoor Advertising",
     description: "Premium DOOH advertising with LED screens across Addis Ababa, Ethiopia",
-    url: baseUrl,
+    url: canonicalDomain,
     telephone: "+251970757575",
     email: "contact@dooh.et",
     address: {

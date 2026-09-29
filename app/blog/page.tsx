@@ -1,22 +1,18 @@
 import { Metadata } from "next";
-import { headers } from "next/headers";
 import Link from "next/link";
 import { blogPosts } from "@/data/blog";
 import SectionHead from "@/components/ui/SectionHead";
 import FadeIn, { FadeInStagger } from "@/components/ui/FadeIn";
 
 export async function generateMetadata(): Promise<Metadata> {
-  const headersList = await headers();
-  const host = headersList.get("host") || "dooh.et";
-  const protocol = headersList.get("x-forwarded-proto") || "https";
-  const baseUrl = `${protocol}://${host}`;
+  const canonicalDomain = process.env.NEXT_PUBLIC_CANONICAL_DOMAIN || "https://dooh.et";
 
   return {
     title: "DOOH Advertising Blog | Insights on LED Billboards in Ethiopia",
     description: "Read the latest insights on DOOH advertising, LED billboard costs, and outdoor marketing strategies in Addis Ababa and Ethiopia.",
     keywords: ["DOOH advertising Addis Ababa", "Outdoor digital advertising services Ethiopia", "LED billboard advertising company"],
     alternates: {
-      canonical: `${baseUrl}/blog`,
+      canonical: `${canonicalDomain}/blog`,
     },
   };
 }
