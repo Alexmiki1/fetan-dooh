@@ -13,7 +13,6 @@ const navLinks = [
   { href: "/locations", label: "Screens" },
   { href: "/blog", label: "Blog" },
   { href: "/about", label: "About" },
-  { href: "/#faq", label: "FAQ" },
 ];
 
 export default function Navbar() {

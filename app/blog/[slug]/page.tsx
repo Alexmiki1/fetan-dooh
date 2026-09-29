@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
+import { headers } from "next/headers";
 import Link from "next/link";
 import { blogPosts } from "@/data/blog";
 import FadeIn from "@/components/ui/FadeIn";
@@ -17,6 +18,10 @@ export function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const headersList = await headers();
+  const host = headersList.get("host") || "dooh.et";
+  const protocol = headersList.get("x-forwarded-proto") || "https";
+  const baseUrl = `${protocol}://${host}`;
   const resolvedParams = await params;
   const post = blogPosts.find((p) => p.slug === resolvedParams.slug);
   
@@ -28,7 +33,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: `${post.title} | DOOH Advertising Addis Ababa`,
     description: post.excerpt,
     alternates: {
-      canonical: `https://dooh.et/blog/${post.slug}`,
+      canonical: `${baseUrl}/blog/${post.slug}`,
     },
   };
 }

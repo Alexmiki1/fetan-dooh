@@ -8,6 +8,9 @@ export default function robots(): MetadataRoute.Robots {
       disallow: "/api/",
     },
     host: "https://dooh.et",
-    sitemap: "https://dooh.et/sitemap.xml",
+    sitemap: [
+      "https://dooh.et/sitemap.xml",
+      "https://fetanads.com/sitemap.xml",
+    ],
   };
 }

@@ -1,15 +1,23 @@
 import type { Metadata } from "next";
+import { headers } from "next/headers";
 import SectionHead from "@/components/ui/SectionHead";
 import FadeIn from "@/components/ui/FadeIn";
 
-export const metadata: Metadata = {
-  title: "About — Fetan Outdoor Advertising",
-  description:
-    "Learn about Fetan Outdoor Advertising — Ethiopia's leading outdoor media company since 2016.",
-  alternates: {
-    canonical: "https://dooh.et/about",
-  },
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const headersList = await headers();
+  const host = headersList.get("host") || "dooh.et";
+  const protocol = headersList.get("x-forwarded-proto") || "https";
+  const baseUrl = `${protocol}://${host}`;
+
+  return {
+    title: "About — Fetan Outdoor Advertising",
+    description:
+      "Learn about Fetan Outdoor Advertising — Ethiopia's leading outdoor media company since 2016.",
+    alternates: {
+      canonical: `${baseUrl}/about`,
+    },
+  };
+}
 
 const timeline = [
   { year: "2016", event: "Founded with first LED screen placement on Bole Road" },

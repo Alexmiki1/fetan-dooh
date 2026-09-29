@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { headers } from "next/headers";
 import { Anton, Inter, Space_Mono } from "next/font/google";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
@@ -25,87 +26,99 @@ const spaceMono = Space_Mono({
   display: "swap",
 });
 
-export const metadata: Metadata = {
-  title: "DOOH Advertising Addis Ababa | Premium LED Screens in Ethiopia",
-  description:
-    "Advertise on premium digital LED screens across Addis Ababa. Reach thousands daily with high impact DOOH advertising at prime locations in Ethiopia. Fetan Outdoor Advertising offers LED billboards, digital signage, and outdoor media solutions in Bole, Churchill, and Medhanialem areas.",
-  keywords: [
-    "DOOH advertising Addis Ababa",
-    "Digital Out of Home advertising Ethiopia",
-    "LED billboard advertising Addis Ababa",
-    "LED screen advertising Ethiopia",
-    "Digital billboard Ethiopia",
-    "Outdoor advertising Addis Ababa",
-    "Digital advertising screens Ethiopia",
-    "LED advertising company Ethiopia",
-    "Digital signage Addis Ababa",
-    "Billboard advertising Ethiopia",
-    "OOH advertising Ethiopia",
-    "Out of Home media Addis Ababa",
-    "Premium outdoor advertising",
-    "Smart digital billboards Addis Ababa",
-    "Programmatic DOOH Ethiopia",
-    "AI targeted outdoor advertising",
-    "Data-driven DOOH advertising",
-    "Transit advertising Addis Ababa",
-    "Outdoor marketing campaigns Ethiopia",
-    "Bole Friendship LED screen",
-    "Churchill Road digital billboard",
-    "Bole Medhanialem advertising",
-    "Addis Ababa LED displays",
-    "Ethiopia outdoor media"
-  ],
-  icons: {
-    icon: "/white.png",
-  },
-  alternates: {
-    canonical: "https://dooh.et",
-  },
-  openGraph: {
+export async function generateMetadata(): Promise<Metadata> {
+  const headersList = await headers();
+  const host = headersList.get("host") || "dooh.et";
+  const protocol = headersList.get("x-forwarded-proto") || "https";
+  const baseUrl = `${protocol}://${host}`;
+
+  return {
     title: "DOOH Advertising Addis Ababa | Premium LED Screens in Ethiopia",
     description:
-      "Advertise on premium digital LED screens across Addis Ababa. Reach thousands daily with high impact DOOH advertising at prime locations in Ethiopia.",
-    url: "https://dooh.et",
-    siteName: "Fetan Outdoor Advertising",
-    locale: "en_US",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "DOOH Advertising Addis Ababa | Premium LED Screens in Ethiopia",
-    description:
-      "Advertise on premium digital LED screens across Addis Ababa. Reach thousands daily with high impact DOOH advertising at prime locations in Ethiopia.",
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
+      "Advertise on premium digital LED screens across Addis Ababa. Reach thousands daily with high impact DOOH advertising at prime locations in Ethiopia. Fetan Outdoor Advertising offers LED billboards, digital signage, and outdoor media solutions in Bole, Churchill, and Medhanialem areas.",
+    keywords: [
+      "DOOH advertising Addis Ababa",
+      "Digital Out of Home advertising Ethiopia",
+      "LED billboard advertising Addis Ababa",
+      "LED screen advertising Ethiopia",
+      "Digital billboard Ethiopia",
+      "Outdoor advertising Addis Ababa",
+      "Digital advertising screens Ethiopia",
+      "LED advertising company Ethiopia",
+      "Digital signage Addis Ababa",
+      "Billboard advertising Ethiopia",
+      "OOH advertising Ethiopia",
+      "Out of Home media Addis Ababa",
+      "Premium outdoor advertising",
+      "Smart digital billboards Addis Ababa",
+      "Programmatic DOOH Ethiopia",
+      "AI targeted outdoor advertising",
+      "Data-driven DOOH advertising",
+      "Transit advertising Addis Ababa",
+      "Outdoor marketing campaigns Ethiopia",
+      "Bole Friendship LED screen",
+      "Churchill Road digital billboard",
+      "Bole Medhanialem advertising",
+      "Addis Ababa LED displays",
+      "Ethiopia outdoor media"
+    ],
+    icons: {
+      icon: "/white.png",
+    },
+    alternates: {
+      canonical: baseUrl,
+    },
+    openGraph: {
+      title: "DOOH Advertising Addis Ababa | Premium LED Screens in Ethiopia",
+      description:
+        "Advertise on premium digital LED screens across Addis Ababa. Reach thousands daily with high impact DOOH advertising at prime locations in Ethiopia.",
+      url: baseUrl,
+      siteName: "Fetan Outdoor Advertising",
+      locale: "en_US",
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "DOOH Advertising Addis Ababa | Premium LED Screens in Ethiopia",
+      description:
+        "Advertise on premium digital LED screens across Addis Ababa. Reach thousands daily with high impact DOOH advertising at prime locations in Ethiopia.",
+    },
+    robots: {
       index: true,
       follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-video-preview": -1,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+      },
     },
-  },
-  other: {
-    "geo.region": "ET-AA",
-    "geo.placename": "Addis Ababa",
-    "geo.position": "9.0145;38.76",
-    "ICBM": "9.0145, 38.76",
-  },
-};
+    other: {
+      "geo.region": "ET-AA",
+      "geo.placename": "Addis Ababa",
+      "geo.position": "9.0145;38.76",
+      "ICBM": "9.0145, 38.76",
+    },
+  };
+}
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const headersList = await headers();
+  const host = headersList.get("host") || "dooh.et";
+  const protocol = headersList.get("x-forwarded-proto") || "https";
+  const baseUrl = `${protocol}://${host}`;
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: "Fetan Outdoor Advertising",
     description: "Premium DOOH advertising with LED screens across Addis Ababa, Ethiopia",
-    url: "https://dooh.et",
+    url: baseUrl,
     telephone: "+251970757575",
     email: "contact@dooh.et",
     address: {
