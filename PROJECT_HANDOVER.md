@@ -250,7 +250,7 @@ The homepage (`app/page.tsx`) renders these sections in order:
 ```typescript
 Phone: +251 970 757 575
 WhatsApp: +251 913 001 010
-Email: contact@dooh.et
+Email: contact@fetanads.com
 Address: 22 Haile Gebreselassie St, IPS Building, Addis Ababa, Ethiopia
 Google Maps: https://maps.app.goo.gl/hmofJc9Ne21sEA83A
 ```
@@ -706,7 +706,7 @@ If you want to add an image to a specific component (not driven by data files):
 - Check Tailwind CSS documentation: https://tailwindcss.com/docs
 
 **For Business Inquiries:**
-- Email: contact@dooh.et
+- Email: contact@fetanads.com
 - Phone: +251 970 757 575
 - WhatsApp: +251 913 001 010
 

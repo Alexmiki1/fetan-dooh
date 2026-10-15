@@ -63,6 +63,6 @@ export const faqs: FAQ[] = [
     id: "10",
     question: "How can I request a quotation?",
     answer:
-      "You can contact Fetan through the website's contact form or reach the team directly by phone at +251 970 757 575 or email at contact@dooh.et. Tell us your campaign goals, preferred locations, and timing, and our team can recommend suitable placements.",
+      "You can contact Fetan through the website's contact form or reach the team directly by phone at +251 970 757 575 or email at contact@fetanads.com. Tell us your campaign goals, preferred locations, and timing, and our team can recommend suitable placements.",
   },
 ];

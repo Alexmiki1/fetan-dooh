@@ -114,7 +114,7 @@ export default function RootLayout({
     description: "Premium DOOH advertising with LED screens across Addis Ababa, Ethiopia",
     url: canonicalDomain,
     telephone: "+251970757575",
-    email: "contact@dooh.et",
+    email: "contact@fetanads.com",
     address: {
       "@type": "PostalAddress",
       streetAddress: "22 Haile Gebreselassie St, IPS Building",
